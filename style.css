@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav{
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#nav img{
+    width: 160px;
+    height: 35px;
+    box-shadow: 1px 10px 10px #00000085;
+}
+#nav #search{
+    border: 1.5px solid #b3b3b3d5;
+    height: 41px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+#nav #search img{
+    margin: 10px;
+    width: 23px;
+    height: 23px;
+    box-shadow: none;
+}
+#nav #search input{
+    border: none;
+    width: 352px;
+    height: 39px;
+    border-radius: 10px;
+}
+#nav #search input:focus{
+    border: 1px solid blue;
+}
+#contact{
+    width: 350px;
+    height: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#contact #number,#contact #mail{
+    width: 130px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+    /* border: 1px solid black;     */
+}
+#contact #number img,#contact #mail img{
+    width: 20px;
+    height: 20px;
+    box-shadow: none;
+}
+#contact #number p,#contact #mail p{
+    font-size: 13px;
+}
+#contact #mail{
+    width: 160px;
+}
+#contact img{
+    width: 50px;
+    height: 50px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/* @media (max-width: 360px) {
+    #nav{
+        height: 47px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #nav img{
+        width: 200px;
+        height: 20px;
+    }
+    #nav #search{
+        position: absolute;
+        left: 28%;
+        width: 190px;
+    }
+    #nav #search input{
+        width: 140px;
+        height: 30px;
+    }
+    #contact{
+        visibility: hidden;
+    }
+} */
