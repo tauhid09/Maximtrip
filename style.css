@@ -71,3 +71,10 @@
     box-shadow: none;
     cursor: pointer;
 }
+
+#slider{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+}
