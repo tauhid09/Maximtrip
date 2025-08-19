@@ -71,28 +71,3 @@
     box-shadow: none;
     cursor: pointer;
 }
-
-/* @media (max-width: 360px) {
-    #nav{
-        height: 47px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    #nav img{
-        width: 200px;
-        height: 20px;
-    }
-    #nav #search{
-        position: absolute;
-        left: 28%;
-        width: 190px;
-    }
-    #nav #search input{
-        width: 140px;
-        height: 30px;
-    }
-    #contact{
-        visibility: hidden;
-    }
-} */
