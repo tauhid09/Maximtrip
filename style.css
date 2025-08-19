@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    overflow-y: visible;
     overflow-x: hidden;
 }
 #nav{
@@ -13,6 +14,9 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
 }
 #nav img{
     width: 160px;
@@ -95,8 +99,138 @@ body{
 }
 
 #slider{
+    overflow-x: auto;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     border: 1px solid black;
+    display: flex;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+#slider::-webkit-scrollbar{
+    display: none;
+}
+#slider::scroll-button(right){
+    z-index: 2;
+    position: absolute;
+    content: '>';
+    color: white;
+    background-color: #000000;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    height: 50px;
+    left: 97%;
+    top: 50%;
+    cursor: pointer;
+}
+#slider::scroll-button(left){
+    z-index: 2;
+    position: absolute;
+    content: '<';
+    color: white;
+    background-color: #000000;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    height: 50px;
+    left: 0%;
+    top: 50%;
+    cursor: pointer;
+}
+.image{
+    flex: 0 0 96rem;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;     
+    text-align: center;
+}
+.image h1,.image h3,.image p {
+    position: static;
+}
+.image h1{
+    width: 100%;
+    /* border: 1px solid white; */
+    position: absolute;
+    /* left: 31%; */
+    top: 53.5%;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 20px;
+}
+.image h3{
+    width: 100%;
+    /* border: 1px solid white; */
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    /* left: 46%; */
+    top: 62.5%;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 20px;
+    font-weight: 400;
+}
+.image p{
+        width: 100%;
+    position: absolute;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    /* left: 44.5%; */
+    top: 71%;
+}
+.image p span{
+    color: rgb(218, 218, 218);
+    text-decoration: line-through;
+    font-weight: 200;
+}
+
+#img1{
+    background-image: url(images/4img.jpg);
+}
+#img2{
+    background-image: url(images/3img.jpg);
+}
+#img3{
+    background-image: url(images/2img.jpg);
+}
+#img4{
+    background-image: url(images/1img.jpg);
+}
+#expert{
+    position: absolute;
+    z-index: 2;
+    left: 43%;
+    top: 90%;
+    width: 280px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #CE3C3D;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 0.5s ease-out;
+}
+#expert:hover{
+    color: #CE3C3D;
+    background-color: white;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
 }
