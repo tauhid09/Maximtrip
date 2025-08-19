@@ -40,7 +40,6 @@
     border: 1px solid blue;
 }
 
-
 .search ::placeholder::before{
     content: "hello";
     color: rgb(134, 129, 129);
