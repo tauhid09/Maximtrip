@@ -287,14 +287,47 @@ body{
 }
 #category-card{
     position: relative;
-   
+    border: 1px solid black;
     top: 10%;
     left: 10%;
     width: 80vw;
-    height: 50vh;
+    height: 42vh;
     overflow: scroll;
     display: flex;
     gap: 15px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+#category-card::-webkit-scrollbar{
+    display: none;
+}
+#category-card::scroll-button(right){
+    z-index: 2;
+    position: absolute;
+    content: '>';
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    height: 50px;
+    left: 88%;
+    top: 45%;
+    cursor: pointer;
+}
+#category-card::scroll-button(left){
+    z-index: 2;
+    position: absolute;
+    content: '<';
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    height: 50px;
+    left: 9%;
+    top: 45%;
+    cursor: pointer;
 }
 .card1{
     position: relative;
@@ -400,20 +433,29 @@ body{
     border-radius: 20px;
     flex: 0 0 18rem;
     /* width: 10px; */
-    height: 45vh;
-    border: 1px solid black;
+    height: 40vh;
+    /* border: 1px solid black; */
+    box-shadow: 0px 200px 60px #00000020;
 }
 .img-card{
     /* border: 1px solid  black; */
     height: 70%;
     border-radius: 20px;
-    background-image: url(images/holidaycategory/1img.png);
     background-position:top;
     background-size: cover;
 }
-.card5 h2{
+.card h2{
     margin: 5px 12px;
     font-size: 19px;
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.card button:hover{
+    background-color: #a73131;
+}
+.card:hover{
+    transition: 0.2s ease-in;
+    transform: translatey(-10px);
+    cursor: pointer;
 }
