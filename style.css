@@ -262,11 +262,26 @@ body{
     display: flex;
     gap: 15px;
 }
-.card-img{
+.card{
+    position: relative;
     margin: 10px;
     border-radius: 20px;
-    flex: 0 0 20rem;
-    width: 100px;
+    flex: 0 0 18rem;
+    /* width: 10px; */
     height: 45vh;
     border: 1px solid black;
+}
+.img-card{
+    /* border: 1px solid  black; */
+    height: 70%;
+    border-radius: 20px;
+    background-image: url(images/holidaycategory/1img.png);
+    background-position:top;
+    background-size: cover;
+}
+.card h2{
+    margin: 5px 12px;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
