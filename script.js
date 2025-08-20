@@ -50,7 +50,7 @@ function typeEffect() {
       setTimeout(() => {
         deleting = true;
         typeEffect();
-      }, 500);
+      }, 50);
     }
 
   } else {

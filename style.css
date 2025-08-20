@@ -258,7 +258,7 @@ body{
     /* border: 1px solid black; */
     top: 10%;
     left: 10%;
-    width: 80vw;
+    width: 83vw;
     height: 42vh;
     overflow: scroll;
     display: flex;
@@ -279,7 +279,7 @@ body{
     font-size: 30px;
     border-radius: 50%;
     height: 50px;
-    left: 88%;
+    left: 91%;
     top: 45%;
     cursor: pointer;
 }
