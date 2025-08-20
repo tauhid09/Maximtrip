@@ -65,11 +65,11 @@ function typeEffect() {
     
       deleting = false;
       textIndex = (textIndex + 1) % texts.length;
-<<<<<<< HEAD
+
       setTimeout(typeEffect, 200);
-=======
+
       setTimeout(typeEffect, 45);
->>>>>>> 5e06013485d31efc07aa2b089462c9ead7f42196
+
     }
   }
 }
