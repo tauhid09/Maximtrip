@@ -1,8 +1,8 @@
 const texts = [
-  'Search "Kashmir Group Tour Packages"',
+'Search "Kashmir Family Tour Packages"',
   'Search "Kashmir Tour Packages"',
   'Search "Kashmir Honeymoon Packages"',
-  'Search "Kashmir Family Tour Packages"',
+    'Search "Kashmir Group Tour Packages"',
   'Search "Leh Ladakh Tour Packages"'
 ];
 
