@@ -47,24 +47,22 @@ body{
     border: 1px solid blue;
 }
 
-.search ::placeholder::before{
-    content: "hello";
-    color: rgb(134, 129, 129);
-    animation: words 20s infinite;
-
-
-
+.cursor{
+         display: inline-block;
+      width: 2px;
+      height: 1em;
+      background: #ffcc00;
+      margin-left: 2px;
+      animation: blink 0.7s steps(1) infinite;
 }
 
-.search::placeholder::after{
-    content: " ";
-    background-color: white ;
-    position: absolute;
-    width: calc(100% + 4px);
-    height: 80%;
-    right: -8px;
-    animation: cursor 0.3s infinite, typing 20s steps;
-}
+  @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    
 #contact{
     width: 350px;
     height: 50px;
@@ -100,7 +98,7 @@ body{
 
 #slider{
     overflow-x: auto;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100vh;
     border: 1px solid black;
@@ -121,7 +119,7 @@ body{
     font-size: 30px;
     border-radius: 50%;
     height: 50px;
-    left: 97%;
+    left: 96%;
     top: 50%;
     cursor: pointer;
 }
@@ -135,7 +133,7 @@ body{
     font-size: 30px;
     border-radius: 50%;
     height: 50px;
-    left: 0%;
+    left: 0.5%;
     top: 50%;
     cursor: pointer;
 }
@@ -184,7 +182,7 @@ body{
     font-weight: 400;
 }
 .image p{
-        width: 100%;
+    width: 100%;
     position: absolute;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -233,4 +231,42 @@ body{
     background-color: white;
     transition: 0.3s ease-in;
     transform: scale(1.05);
+}
+
+#category{
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+}
+#category h1{
+    /* position: absolute; */
+    /* border: 1px solid black; */
+    margin: 45px 100px auto;
+    font-family:sans-serif;
+    font-weight: 550;
+}
+#category h1 span{
+    color: #D13C3D;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
+}
+#category-card{
+    position: relative;
+    border: 1px solid black;
+    top: 10%;
+    left: 10%;
+    width: 80vw;
+    height: 50vh;
+    overflow: scroll;
+    display: flex;
+    gap: 15px;
+}
+.card-img{
+    margin: 10px;
+    border-radius: 20px;
+    flex: 0 0 20rem;
+    width: 100px;
+    height: 45vh;
+    border: 1px solid black;
 }
