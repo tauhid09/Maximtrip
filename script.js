@@ -1,8 +1,10 @@
+
+//Search Animation
 const texts = [
-'Search "Kashmir Family Tour Packages"',
+  'Search "Kashmir Family Tour Packages"',
   'Search "Kashmir Tour Packages"',
   'Search "Kashmir Honeymoon Packages"',
-    'Search "Kashmir Group Tour Packages"',
+  'Search "Kashmir Group Tour Packages"',
   'Search "Leh Ladakh Tour Packages"'
 ];
 
@@ -21,7 +23,7 @@ function getFixedPart(sentence, prevSentence) {
     fixed = 'Search "Kashmir ';
   }
 
- 
+
   if (sentence.toLowerCase().includes("ladakh")) {
     fixed = 'Search ';
   }
@@ -46,7 +48,7 @@ function typeEffect() {
       charIndex++;
       setTimeout(typeEffect, 45);
     } else {
-   
+
       setTimeout(() => {
         deleting = true;
         typeEffect();
@@ -62,13 +64,13 @@ function typeEffect() {
       charIndex--;
       setTimeout(typeEffect, 45);
     } else {
-    
+
       deleting = false;
       textIndex = (textIndex + 1) % texts.length;
 
       setTimeout(typeEffect, 200);
 
-     
+
 
     }
   }
@@ -77,65 +79,94 @@ function typeEffect() {
 typeEffect();
 
 
-
-
-// let currentIndex = 0;  
-// const slides = document.querySelectorAll(".slide-image");
-// const totalSlides = slides.length;
-
-
-// function showSlide(index) {
-//     slides.forEach((slide, i) => {
-//         slide.style.display = (i === index) ? "block" : "none";
-//     });
-// }
-
-// function nextSlide() {
-//     currentIndex = (currentIndex + 1) % totalSlides; 
-//     showSlide(currentIndex);
-// }
-
-
-// showSlide(currentIndex);
-
-
-// setInterval(nextSlide, 5000);
-
-// let rightBtn = document.querySelector("#btn-2");
-
-// let leftBtn = document.querySelector("#btn-1");
-
-// rightBtn.addEventListener("click",nextSlide);
-// leftBtn.addEventListener("click",nextSlide);
-
-
+//Hero Section
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slide-image");
 const totalSlides = slides.length;
 
 function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
-    });
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
+  });
 }
 
 function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    showSlide(currentIndex);
+  currentIndex = (currentIndex + 1) % totalSlides;
+  showSlide(currentIndex);
 }
 
 function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    showSlide(currentIndex);
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  showSlide(currentIndex);
 }
 
-// init first slide
+
 showSlide(currentIndex);
 
 setInterval(nextSlide, 5000);
 
-// button clicks
+
 document.querySelector("#btn-2").addEventListener("click", nextSlide);
 document.querySelector("#btn-1").addEventListener("click", prevSlide);
+
+
+//Holiday Category
+const cardContainer = document.getElementById("category-card");
+const leftBtn = document.getElementById("left-button");
+const rightBtn = document.getElementById("right-button");
+
+const cardWidth = document.querySelector(".card").offsetWidth + 20;
+let autoScroll;
+
+
+const cards = document.querySelectorAll(".card");
+cards.forEach(card => {
+  const clone = card.cloneNode(true);
+  cardContainer.appendChild(clone);
+});
+
+
+function scrollRight() {
+  cardContainer.scrollBy({ left: cardWidth, behavior: "smooth" });
+
+
+  if (cardContainer.scrollLeft >= cardContainer.scrollWidth / 2) {
+    cardContainer.scrollTo({ left: 0, behavior: "instant" });
+  }
+}
+
+
+function scrollLeft() {
+  cardContainer.scrollBy({ left: -cardWidth, behavior: "smooth" });
+
+  if (cardContainer.scrollLeft <= 0) {
+    cardContainer.scrollTo({ left: cardContainer.scrollWidth / 2, behavior: "instant" });
+  }
+}
+
+
+rightBtn.addEventListener("click", () => {
+  scrollRight();
+  resetAutoScroll();
+});
+
+leftBtn.addEventListener("click", () => {
+  scrollLeft();
+  resetAutoScroll();
+});
+
+
+function startAutoScroll() {
+  autoScroll = setInterval(scrollRight, 5000);
+}
+
+function resetAutoScroll() {
+  clearInterval(autoScroll);
+  startAutoScroll();
+}
+
+startAutoScroll();
+
+
 
 
