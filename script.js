@@ -77,31 +77,65 @@ function typeEffect() {
 typeEffect();
 
 
-let currentIndex = 0;  
-const slides = document.querySelectorAll("#slider .image");
-const totalSlides = slides.length;
 
+
+// let currentIndex = 0;  
+// const slides = document.querySelectorAll(".slide-image");
+// const totalSlides = slides.length;
+
+
+// function showSlide(index) {
+//     slides.forEach((slide, i) => {
+//         slide.style.display = (i === index) ? "block" : "none";
+//     });
+// }
+
+// function nextSlide() {
+//     currentIndex = (currentIndex + 1) % totalSlides; 
+//     showSlide(currentIndex);
+// }
+
+
+// showSlide(currentIndex);
+
+
+// setInterval(nextSlide, 5000);
+
+// let rightBtn = document.querySelector("#btn-2");
+
+// let leftBtn = document.querySelector("#btn-1");
+
+// rightBtn.addEventListener("click",nextSlide);
+// leftBtn.addEventListener("click",nextSlide);
+
+
+let currentIndex = 0;
+const slides = document.querySelectorAll(".slide-image");
+const totalSlides = slides.length;
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
-        slide.style.display = (i === index) ? "block" : "none";
+        slide.classList.toggle("active", i === index);
     });
 }
 
 function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides; 
+    currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
 }
 
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+}
 
+// init first slide
 showSlide(currentIndex);
 
+setInterval(nextSlide, 5000);
 
-setInterval(nextSlide, 3000);
+// button clicks
+document.querySelector("#btn-2").addEventListener("click", nextSlide);
+document.querySelector("#btn-1").addEventListener("click", prevSlide);
 
-let rightBtn = document.querySelector(".right-btn");
 
-let leftBtn = document.querySelector(".left-btn");
-
-rightBtn.addEventListener("click",nextSlide);
-leftBtn.addEventListener("click",nextSlide);
