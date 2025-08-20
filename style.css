@@ -47,24 +47,22 @@ body{
     border: 1px solid blue;
 }
 
-.search ::placeholder::before{
-    content: "hello";
-    color: rgb(134, 129, 129);
-    animation: words 20s infinite;
-
-
-
+.cursor{
+         display: inline-block;
+      width: 2px;
+      height: 1em;
+      background: #ffcc00;
+      margin-left: 2px;
+      animation: blink 0.7s steps(1) infinite;
 }
 
-.search::placeholder::after{
-    content: " ";
-    background-color: white ;
-    position: absolute;
-    width: calc(100% + 4px);
-    height: 80%;
-    right: -8px;
-    animation: cursor 0.3s infinite, typing 20s steps;
-}
+  @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    
 #contact{
     width: 350px;
     height: 50px;
