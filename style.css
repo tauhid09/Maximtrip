@@ -24,7 +24,7 @@ body{
     box-shadow: 1px 10px 10px #00000085;
 }
 #nav #search{
-    border: 1.5px solid #b3b3b3d5;
+    border: 1.5px solid #ccd0d3;
     height: 41px;
     width: 400px;
     display: flex;
@@ -44,10 +44,11 @@ body{
     border-radius: 10px;
 }
 #nav #search input:focus{
-    border: 1px solid blue;
+    border: 1px solid rgb(46, 46, 212);
 }
 .search::placeholder{
-    color: #7c8892;
+    color: #95abbd;
+    font-size: 15px;
 }
 .cursor{
         display: inline-block;
@@ -111,7 +112,35 @@ body{
 #slider::-webkit-scrollbar{
     display: none;
 }
-#slider::scroll-button(right){
+.left-btn{
+  
+    color: rgb(216, 216, 216);
+    margin-left: 20px;
+    font-size: 30px;
+   height: 55px;
+   width: 55px;
+   
+   border: 2px solid black;
+   background-color: black;
+   position: absolute;
+   bottom: 35%;
+   border-radius: 50%;
+}
+.right-btn{
+  
+    color: rgb(216, 216, 216);
+    margin-left: 20px;
+    font-size: 30px;
+   height: 55px;
+   width: 55px;
+   right: 30px;
+   border: 2px solid black;
+   background-color: black;
+   position: absolute;
+   bottom: 35%;
+   border-radius: 50%;
+}
+/* #slider::scroll-button(right){
     z-index: 2;
     position: absolute;
     content: '>';
@@ -138,7 +167,7 @@ body{
     left: 0.5%;
     top: 50%;
     cursor: pointer;
-}
+} */
 .image{
     flex: 0 0 96rem;
     width: 100vw;
@@ -211,6 +240,9 @@ body{
 #img4{
     background-image: url(images/1img.jpg);
 }
+
+
+
 #expert{
     position: absolute;
     z-index: 1;
@@ -255,7 +287,7 @@ body{
 }
 #category-card{
     position: relative;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     top: 10%;
     left: 10%;
     width: 83vw;
@@ -297,7 +329,105 @@ body{
     top: 45%;
     cursor: pointer;
 }
-.card{
+.card1{
+    position: relative;
+    margin: 10px;
+    border-radius: 20px;
+    flex: 0 0 18rem;
+    /* width: 10px; */
+    height: 45vh;
+    
+}
+.card1 .img-card{
+    /* border: 1px solid  black; */
+    height: 70%;
+    border-radius: 20px;
+    background-image: url(images/holidaycategory/1img.png);
+    background-position:top;
+    background-size: cover;
+}
+.card h2{
+    margin: 5px 12px;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card2{
+    position: relative;
+    margin: 10px;
+    border-radius: 20px;
+    flex: 0 0 18rem;
+    /* width: 10px; */
+    height: 45vh;
+    border: 1px solid black;
+}
+.img-card{
+    /* border: 1px solid  black; */
+    height: 70%;
+    border-radius: 20px;
+   
+    background-position:top;
+    background-size: cover;
+}
+.card2 h2{
+    margin: 5px 12px;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card3{
+    position: relative;
+    margin: 10px;
+    border-radius: 20px;
+    flex: 0 0 18rem;
+    /* width: 10px; */
+    height: 45vh;
+    border: 1px solid rgb(250, 250, 250);
+}
+.card3 .img-card{
+    /* border: 1px solid  black; */
+    height: 70%;
+    border-radius: 20px;
+    background-image: url(images/holidaycategory/1img.png);
+    background-position:top;
+    background-size: cover;
+}
+.card3 h2{
+    margin: 5px 12px;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card4{
+    position: relative;
+    margin: 10px;
+    border-radius: 20px;
+    flex: 0 0 18rem;
+    /* width: 10px; */
+    height: 45vh;
+    border: 1px solid black;
+}
+.img-card{
+    /* border: 1px solid  black; */
+    height: 70%;
+    border-radius: 20px;
+    background-image: url(images/holidaycategory/1img.png);
+    background-position:top;
+    background-size: cover;
+}
+.car4 h2{
+    margin: 5px 12px;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card5{
     position: relative;
     margin: 10px;
     border-radius: 20px;
@@ -314,44 +444,9 @@ body{
     background-position:top;
     background-size: cover;
 }
-#card1{
-    background-image: url(images/holidaycategory/1img.png);
-}
-#card2{
-    background-image: url(images/holidaycategory/2img.png);
-}
-#card3{
-    background-image: url(images/holidaycategory/3img.png);
-}
-#card4{
-    background-image: url(images/holidaycategory/4img.png);
-}
-#card5{
-    background-image: url(images/holidaycategory/5img.png);
-}
 .card h2{
-    margin: 15px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #1E2939;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.card img{
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    top: 85.8%;
-    left: 5%;
-}
-.card button{
-    position: absolute;
-    left: 20%;
-    width: 200px;
-    height: 35px;
-    top: 85.8%;
-    border: none;
-    background-color: #D13C3D;
-    color: white;
+    margin: 5px 12px;
+    font-size: 19px;
     font-weight: 600;
     border-radius: 10px;
     font-size: 15px;
@@ -364,4 +459,3 @@ body{
     transform: translatey(-10px);
     cursor: pointer;
 }
-

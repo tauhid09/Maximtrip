@@ -1,8 +1,8 @@
 const texts = [
-  'Search "Kashmir Group Tour Packages"',
+'Search "Kashmir Family Tour Packages"',
   'Search "Kashmir Tour Packages"',
   'Search "Kashmir Honeymoon Packages"',
-  'Search "Kashmir Family Tour Packages"',
+    'Search "Kashmir Group Tour Packages"',
   'Search "Leh Ladakh Tour Packages"'
 ];
 
@@ -68,10 +68,40 @@ function typeEffect() {
 
       setTimeout(typeEffect, 200);
 
-      setTimeout(typeEffect, 45);
+     
 
     }
   }
 }
 
 typeEffect();
+
+
+let currentIndex = 0;  
+const slides = document.querySelectorAll("#slider .image");
+const totalSlides = slides.length;
+
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? "block" : "none";
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides; 
+    showSlide(currentIndex);
+}
+
+
+showSlide(currentIndex);
+
+
+setInterval(nextSlide, 3000);
+
+let rightBtn = document.querySelector(".right-btn");
+
+let leftBtn = document.querySelector(".left-btn");
+
+rightBtn.addEventListener("click",nextSlide);
+leftBtn.addEventListener("click",nextSlide);
