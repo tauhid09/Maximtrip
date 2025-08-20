@@ -65,7 +65,7 @@ function typeEffect() {
     
       deleting = false;
       textIndex = (textIndex + 1) % texts.length;
-      setTimeout(typeEffect, 20);
+      setTimeout(typeEffect, 200);
     }
   }
 }
