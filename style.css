@@ -46,7 +46,9 @@ body{
 #nav #search input:focus{
     border: 1px solid blue;
 }
-
+.search::placeholder{
+    color: #7c8892;
+}
 .cursor{
         display: inline-block;
       width: 2px;

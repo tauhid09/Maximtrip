@@ -44,13 +44,13 @@ function typeEffect() {
 
     if (charIndex < variablePart.length) {
       charIndex++;
-      setTimeout(typeEffect, 20);
+      setTimeout(typeEffect, 45);
     } else {
    
       setTimeout(() => {
         deleting = true;
         typeEffect();
-      }, 1500);
+      }, 500);
     }
 
   } else {
@@ -60,12 +60,12 @@ function typeEffect() {
 
     if (charIndex > 0) {
       charIndex--;
-      setTimeout(typeEffect, 20);
+      setTimeout(typeEffect, 45);
     } else {
     
       deleting = false;
       textIndex = (textIndex + 1) % texts.length;
-      setTimeout(typeEffect, 20);
+      setTimeout(typeEffect, 45);
     }
   }
 }
