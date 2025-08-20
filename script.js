@@ -68,7 +68,7 @@ function typeEffect() {
 
       setTimeout(typeEffect, 200);
 
-      setTimeout(typeEffect, 45);
+     
 
     }
   }
