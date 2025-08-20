@@ -44,13 +44,13 @@ function typeEffect() {
 
     if (charIndex < variablePart.length) {
       charIndex++;
-      setTimeout(typeEffect, 20);
+      setTimeout(typeEffect, 45);
     } else {
    
       setTimeout(() => {
         deleting = true;
         typeEffect();
-      }, 1500);
+      }, 500);
     }
 
   } else {
@@ -60,12 +60,16 @@ function typeEffect() {
 
     if (charIndex > 0) {
       charIndex--;
-      setTimeout(typeEffect, 20);
+      setTimeout(typeEffect, 45);
     } else {
     
       deleting = false;
       textIndex = (textIndex + 1) % texts.length;
+<<<<<<< HEAD
       setTimeout(typeEffect, 200);
+=======
+      setTimeout(typeEffect, 45);
+>>>>>>> 5e06013485d31efc07aa2b089462c9ead7f42196
     }
   }
 }
