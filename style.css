@@ -48,7 +48,7 @@ body{
 }
 
 .cursor{
-         display: inline-block;
+        display: inline-block;
       width: 2px;
       height: 1em;
       background: #ffcc00;
@@ -211,7 +211,7 @@ body{
 }
 #expert{
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     left: 43%;
     top: 90%;
     width: 280px;
