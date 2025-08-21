@@ -168,5 +168,57 @@ function resetAutoScroll() {
 startAutoScroll();
 
 
+const packagesContainer = document.getElementById("packages-card");
+const leftPackageBtn = document.getElementById("left-package");
+const rightPackageBtn = document.getElementById("right-package");
+
+const packageWidth = document.querySelector(".pack-card").offsetWidth + 40;
+let autoScrollPackages;
+
+const packageCards = document.querySelectorAll(".pack-card");
+packageCards.forEach(card => {
+  const clone = card.cloneNode(true);
+  packagesContainer.appendChild(clone);
+});
+
+function scrollPackagesRight() {
+  packagesContainer.scrollBy({ left: packageWidth, behavior: "smooth" });
+
+
+  if (packagesContainer.scrollLeft >= packagesContainer.scrollWidth / 2) {
+    packagesContainer.scrollTo({ left: 0, behavior: "instant" });
+  }
+}
+
+function scrollPackagesLeft() {
+  packagesContainer.scrollBy({ left: -packageWidth, behavior: "smooth" });
+
+  if (packagesContainer.scrollLeft <= 0) {
+    packagesContainer.scrollTo({ left: packagesContainer.scrollWidth / 2, behavior: "instant" });
+  }
+}
+
+rightPackageBtn.addEventListener("click", () => {
+  scrollPackagesRight();
+  resetAutoScrollPackages();
+});
+
+leftPackageBtn.addEventListener("click", () => {
+  scrollPackagesLeft();
+  resetAutoScrollPackages();
+});
+
+function startAutoScrollPackages() {
+  autoScrollPackages = setInterval(scrollPackagesRight, 3000);
+}
+
+function resetAutoScrollPackages() {
+  clearInterval(autoScrollPackages);
+  startAutoScrollPackages();
+}
+
+startAutoScrollPackages();
+
+
 
 
