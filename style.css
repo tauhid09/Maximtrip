@@ -238,7 +238,7 @@ body {
     position: absolute;
     bottom: 60px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-45.5%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,7 +262,7 @@ body {
     color: #CE3C3D;
     background-color: white;
     transition: 0.2s ease-in;
-    transform: scale(1.05) translateX(-50%);
+    transform: scale(1.05)  translateX(-45.5%);
 }
 
 #holiday-category {
@@ -875,3 +875,56 @@ body {
     left: -1%;
     top: -46.5%;
 }
+#fotter{
+    border: 2px solid red;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+#link{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:100;
+}
+#copyright{
+    /* border: 1px solid black; */
+    width: 500px;
+    height: 50px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in;
+}
+.icon img{
+    width: 25px;
+}
+.icon:hover{
+    transition: 0.2s ease-in;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17.5px;
+    color: #364153;
+}
+#copyright span{
+    font-weight: 600;
+}
+
