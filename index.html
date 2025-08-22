@@ -1,262 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- Slick CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <script src="script.js" defer></script>
+        <title>Maximtrip</title>
+    </head>
 
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <script src="script.js" defer></script>
-    <title>Maximtrip</title>
-</head>
-
-<body>
-    <div id="nav">
-        <img src="images/image.png" alt>
-        <div id="search">
-            <img src="https://img.icons8.com/?size=100&id=59878&format=png&color=b3b3b3d5" alt>
-            <input id="animatedInput" class="search" type="search" placeholder>
-        </div>
-        <div id="contact">
-            <div id="number">
-                <img src="icon/phone.png" alt>
-                <p>+91 - 9797996205</p>
+    <body>
+        <div id="nav">
+            <img src="images/image.png" alt>
+            <div id="search">
+                <img
+                    src="https://img.icons8.com/?size=100&id=59878&format=png&color=b3b3b3d5"
+                    alt>
+                <input id="animatedInput" class="search" type="search"
+                    placeholder>
             </div>
-            <div id="mail">
-                <img src="icon/mail.png" alt>
-                <p>holiday@maximtrip.in</p>
-            </div>
-            <div id="circle"><img src="icon/plain.png" alt=""></div>
-        </div>
-    </div>
-
-    <div id="hero-section" >
-        <div class="slide-image active" id="slide-img1">
-            <div class="slide-card">
-                <h1>Kashmir A Frozen Dream Vacation</h1>
-                <h3>8 Days / 7 Nights</h3>
-                <p>24199 <span style="text-decoration: line-through; color: #cccccc; font-weight: 400;">26198</span></p>
+            <div id="contact">
+                <div id="number">
+                    <img src="icon/phone.png" alt>
+                    <p>+91 - 9797996205</p>
+                </div>
+                <div id="mail">
+                    <img src="icon/mail.png" alt>
+                    <p>holiday@maximtrip.in</p>
+                </div>
+                <div id="circle"><img src="icon/plain.png" alt></div>
             </div>
         </div>
-        <div class="slide-image active" id="slide-img2">
-            <div class="slide-card">
-                <h1>Kashmir Escapes At Smart Prices</h1>
-                <h3>7 Days / 6 Nights</h3>
-                <p>14599 <span style="text-decoration: line-through; color: white; font-weight: 400">16599</span></p>
+
+        <div id="hero-section">
+            <div class="slide-image active" id="slide-img1">
+                <div class="slide-card">
+                    <h1>Kashmir A Frozen Dream Vacation</h1>
+                    <h3>8 Days / 7 Nights</h3>
+                    <p>24199 <span
+                            style="text-decoration: line-through; color: #cccccc; font-weight: 400;">26198</span></p>
+                </div>
             </div>
+            <div class="slide-image active" id="slide-img2">
+                <div class="slide-card">
+                    <h1>Kashmir Escapes At Smart Prices</h1>
+                    <h3>7 Days / 6 Nights</h3>
+                    <p>14599 <span
+                            style="text-decoration: line-through; color: white; font-weight: 400">16599</span></p>
+                </div>
+            </div>
+            <div class="slide-image active" id="slide-img3">
+                <div class="slide-card">
+                    <h1>Kashmir Unplugged</h1>
+                    <h3>6 Days / 5 Nights</h3>
+                    <p>16799 <span
+                            style="text-decoration: line-through; color: white; font-weight: 400">19799</span></p>
+                </div>
+            </div>
+            <div class="slide-image active" id="slide-img4">
+                <div class="slide-card">
+                    <h1>Colors Of Kashmir</h1>
+                    <h3>5 Days / 4 Nights</h3>
+                    <p>13500 <span
+                            style="text-decoration: line-through; color: white; font-weight: 400">15000</span></p>
+                </div>
+            </div>
+            <button class="arrow-button" id="btn-1"><img
+                    src="icon/left-arrow.png" alt style="width: 20px;"></button>
+            <button class="arrow-button" id="btn-2"><img
+                    src="icon/right-arrow.png" alt
+                    style="width: 20px;"></button>
+            <button id="expert">CONNECT WITH AN EXPERT</button>
         </div>
-        <div class="slide-image active" id="slide-img3">
-            <div class="slide-card">
-                <h1>Kashmir Unplugged</h1>
-                <h3>6 Days / 5 Nights</h3>
-                <p>16799 <span style="text-decoration: line-through; color: white; font-weight: 400">19799</span></p>
+
+        <div id="holiday-category" class="category-slider">
+            <h1><span class="red-text">Holiday</span> Category</h1>
+            <div class="underline"></div>
+            <div id="category-card">
+                <div class="card">
+                    <div id="card1" class="img-card"></div>
+                    <h2 class="card-name">Kashmir Tour Packages</h2>
+                    <div class="call-request">
+                        <img
+                            src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                            alt>
+                        <button>Request Callback</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="card2" class="img-card"></div>
+                    <h2 class="card-name">Kashmir Honeymoon Packages</h2>
+                    <div class="call-request">
+                        <img
+                            src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                            alt>
+                        <button>Request Callback</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="card3" class="img-card"></div>
+                    <h2 class="card-name">Kashmir Family Tour Packages</h2>
+                    <div class="call-request">
+                        <img
+                            src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                            alt>
+                        <button>Request Callback</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="card4" class="img-card"></div>
+                    <h2 class="card-name">Kashmir Group Tour Packages</h2>
+                    <div class="call-request">
+                        <img
+                            src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                            alt>
+                        <button>Request Callback</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="card5" class="img-card"></div>
+                    <h2 class="card-name">Leh Ladakh Tour Packages</h2>
+                    <div class="call-request">
+                        <img
+                            src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                            alt>
+                        <button>Request Callback</button>
+                    </div>
+                </div>
             </div>
+            <button class="category-btn" id="right-button"><img
+                    src="icon/black-right-arrow.png" alt></button>
+            <button class="category-btn" id="left-button"><img
+                    src="icon/black-left-arrow.png" alt></button>
         </div>
-        <div class="slide-image active" id="slide-img4">
-            <div class="slide-card">
-                <h1>Colors Of Kashmir</h1>
-                <h3>5 Days / 4 Nights</h3>
-                <p>13500 <span style="text-decoration: line-through; color: white; font-weight: 400">15000</span></p>
+
+        <div id="holiday-packages" class="package-slider">
+            <h1><span class="red-text">Holiday</span> Packages</h1>
+            <div class="underline"></div>
+            <div id="packages-card">
+                <div class="pack-card ">
+                    <div class="pack-img" id="package-img1"></div>
+                    <h3 class="pack-name">Valley Of Wonders</h3>
+                    <div class="time">
+                        <img src="icon/clock.png" alt>
+                        <p>4 Days / 3 Nights</p>
+                    </div>
+                    <div class="location">
+                        <img src="icon/location.png" alt>
+                        <p>Kashmir</p>
+                    </div>
+                    <div class="box">
+                        <div class="sub-box">
+                            <p>Rs.12599</p>
+                        </div>
+                        <div class="sub-box">
+                            <p style="color: #a4a4a4; font-weight: 500;">View
+                                More</p>
+                        </div>
+                    </div>
+                    <div class="call-request-1">
+                        <img
+                            src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                            alt>
+                        <button>Request Callback</button>
+                    </div>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-img" id="package-img2"></div>
+                    <h3 class="pack-name">Kashmir A Frozen Dream Vacation</h3>
+                    <div class="time">
+                        <img src="icon/clock.png" alt>
+                        <p>8 Days / 7 Nights</p>
+                    </div>
+                    <div class="location">
+                        <img src="icon/location.png" alt>
+                        <p>Kashmir</p>
+                    </div>
+                    <div class="box">
+                        <div class="sub-box">
+                            <p>Rs.24199</p>
+                        </div>
+                        <div class="sub-box">
+                            <p style="color: #a4a4a4; font-weight: 500;">View
+                                More</p>
+                        </div>
+                    </div>
+                    <div class="call-request-1">
+                        <img
+                            src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                            alt>
+                        <button>Request Callback</button>
+                    </div>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-img" id="package-img3"></div>
+                    <h3 class="pack-name">Kashmir Escapes At Smart Prices</h3>
+                    <div class="time">
+                        <img src="icon/clock.png" alt>
+                        <p>7 Days / 6 Nights</p>
+                    </div>
+                    <div class="location">
+                        <img src="icon/location.png" alt>
+                        <p>Kashmir</p>
+                    </div>
+                    <div class="box">
+                        <div class="sub-box">
+                            <p>Rs.14599</p>
+                        </div>
+                        <div class="sub-box">
+                            <p style="color: #a4a4a4; font-weight: 500;">View
+                                More</p>
+                        </div>
+                    </div>
+                    <div class="call-request-1">
+                        <img
+                            src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                            alt>
+                        <button>Request Callback</button>
+                    </div>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-img" id="package-img4"></div>
+                    <h3 class="pack-name">Kashmir Unplugged</h3>
+                    <div class="time">
+                        <img src="icon/clock.png" alt>
+                        <p>6 Days / 5 Nights</p>
+                    </div>
+                    <div class="location">
+                        <img src="icon/location.png" alt>
+                        <p>Kashmir</p>
+                    </div>
+                    <div class="box">
+                        <div class="sub-box">
+                            <p>Rs.16799</p>
+                        </div>
+                        <div class="sub-box">
+                            <p style="color: #a4a4a4; font-weight: 500;">View
+                                More</p>
+                        </div>
+                    </div>
+                    <div class="call-request-1">
+                        <img
+                            src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                            alt>
+                        <button>Request Callback</button>
+                    </div>
+                </div>
+                <div class="pack-card">
+                    <div class="pack-img" id="package-img5"></div>
+                    <h3 class="pack-name">Colors Of Kashmir</h3>
+                    <div class="time">
+                        <img src="icon/clock.png" alt>
+                        <p>5 Days / 5 Nights</p>
+                    </div>
+                    <div class="location">
+                        <img src="icon/location.png" alt>
+                        <p>Kashmir</p>
+                    </div>
+                    <div class="box">
+                        <div class="sub-box">
+                            <p>Rs.13599</p>
+                        </div>
+                        <div class="sub-box">
+                            <p style="color: #a4a4a4; font-weight: 500;">View
+                                More</p>
+                        </div>
+                    </div>
+                    <div class="call-request-1">
+                        <img
+                            src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                            alt>
+                        <button>Request Callback</button>
+                    </div>
+                </div>
             </div>
+            <button class="package-btn" id="right-package"><img
+                    src="icon/black-right-arrow.png" alt></button>
+            <button class="package-btn" id="left-package"><img
+                    src="icon/black-left-arrow.png" alt></button>
         </div>
-        <button class="arrow-button" id="btn-1"><img src="icon/left-arrow.png" alt style="width: 20px;"></button>
-        <button class="arrow-button" id="btn-2"><img src="icon/right-arrow.png" alt style="width: 20px;"></button>
-        <button id="expert">CONNECT WITH AN EXPERT</button>
-    </div>
 
-    <div id="holiday-category" class="category-slider">
-        <h1><span class="red-text">Holiday</span> Category</h1>
-        <div class="underline"></div>
-        <div id="category-card">
-            <div class="card">
-                <div id="card1" class="img-card"></div>
-                <h2 class="card-name">Kashmir Tour Packages</h2>
-                <div class="call-request">
-                    <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="">
-                    <button>Request Callback</button>
+        <div id="populer-destination" class="destination">
+            <h1><span class="red-text">Popular </span>Destinations</h1>
+            <div class="underline"></div>
+            <div id="destination-slider">
+                <div class="destination-card" id="des-card-1">
+                    <div class="card-content">
+                        <img src="images/populardestination/1img.jpg" alt>
+                        <div class="blackgrd"></div>
+                        <h3>Places to Visit In Srinagar</h3>
+                        <p>Places to Visit In Srinagar</p>
+                    </div>
+                </div>
+                <div class="destination-card" id="des-card-2">
+                    <div class="card-content">
+                        <img src="images/populardestination/2img.jpg" alt>
+                        <div class="blackgrd"></div>
+                        <h3>Places to Visit In Pahalgam</h3>
+                        <p>Places to Visit In Pahalgam</p>
+                    </div>
+                </div>
+                <div class="destination-card" id="des-card-3">
+                    <div class="card-content">
+                        <img src="images/populardestination/3img.jpg" alt>
+                        <div class="blackgrd"></div>
+                        <h3>Places to Visit in Sonmarg</h3>
+                        <p>Places to Visit in Sonmarg</p>
+                    </div>
+                </div>
+                <div class="destination-card" id="des-card-4">
+                    <div class="card-content">
+                        <img src="images/populardestination/4img.jpg" alt>
+                        <div class="blackgrd"></div>
+                        <h3>Places to Visit in Gulmarg</h3>
+                        <p>Places to Visit in Gulmarg</p>
+                    </div>
+                </div>
+                <div class="destination-card" id="des-card-5">
+                    <div class="card-content">
+                        <img src="images/populardestination/5img.jpg" alt>
+                        <div class="blackgrd"></div>
+                        <h3>Places To Visit In Doodhpathri</h3>
+                        <p>Places To Visit In Doodhpathri</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div id="card2" class="img-card"></div>
-                <h2 class="card-name">Kashmir Honeymoon Packages</h2>
-                <div class="call-request">
-                    <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="">
-                    <button>Request Callback</button>
-                </div>
-            </div>
-            <div class="card">
-                <div id="card3" class="img-card"></div>
-                <h2 class="card-name">Kashmir Family Tour Packages</h2>
-                <div class="call-request">
-                    <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="">
-                    <button>Request Callback</button>
-                </div>
-            </div>
-            <div class="card">
-                <div id="card4" class="img-card"></div>
-                <h2 class="card-name">Kashmir Group Tour Packages</h2>
-                <div class="call-request">
-                    <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="">
-                    <button>Request Callback</button>
-                </div>
-            </div>
-            <div class="card">
-                <div id="card5" class="img-card"></div>
-                <h2 class="card-name">Leh Ladakh Tour Packages</h2>
-                <div class="call-request">
-                    <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="">
-                    <button>Request Callback</button>
-                </div>
-            </div>
+            <button class="package-btn" id="right-destionation"><img
+                    src="icon/black-right-arrow.png" alt></button>
+            <button class="package-btn" id="left-destionation"><img
+                    src="icon/black-left-arrow.png" alt></button>
         </div>
-        <button class="category-btn" id="right-button"><img src="icon/black-right-arrow.png" alt=""></button>
-        <button class="category-btn" id="left-button"><img src="icon/black-left-arrow.png" alt=""></button>
-    </div>
+        </body>
 
-    <div id="holiday-packages" class="package-slider">
-        <h1><span class="red-text">Holiday</span> Packages</h1>
-        <div class="underline"></div>
-        <div id="packages-card">
-            <div class="pack-card ">
-                <div class="pack-img" id="package-img1"></div>
-                <h3 class="pack-name">Valley Of Wonders</h3>
-                <div class="time">
-                    <img src="icon/clock.png" alt="">
-                    <p>4 Days / 3 Nights</p>
-                </div>
-                <div class="location">
-                    <img src="icon/location.png" alt="">
-                    <p>Kashmir</p>
-                </div>
-                <div class="box">
-                    <div class="sub-box">
-                        <p>Rs.12599</p>
-                    </div>
-                    <div class="sub-box">
-                        <p style="color: #a4a4a4; font-weight: 500;">View More</p>
-                    </div>
-                </div>
-                <div class="call-request-1">
-                    <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="">
-                    <button>Request Callback</button>
-                </div>
-            </div>
-            <div class="pack-card">
-                <div class="pack-img" id="package-img2"></div>
-                <h3 class="pack-name">Kashmir A Frozen Dream Vacation</h3>
-                <div class="time">
-                    <img src="icon/clock.png" alt="">
-                    <p>8 Days / 7 Nights</p>
-                </div>
-                <div class="location">
-                    <img src="icon/location.png" alt="">
-                    <p>Kashmir</p>
-                </div>
-                <div class="box">
-                    <div class="sub-box">
-                        <p>Rs.24199</p>
-                    </div>
-                    <div class="sub-box">
-                        <p style="color: #a4a4a4; font-weight: 500;">View More</p>
-                    </div>
-                </div>
-                <div class="call-request-1">
-                    <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="">
-                    <button>Request Callback</button>
-                </div>
-            </div>
-            <div class="pack-card">
-                <div class="pack-img" id="package-img3"></div>
-                <h3 class="pack-name">Kashmir Escapes At Smart Prices</h3>
-                <div class="time">
-                    <img src="icon/clock.png" alt="">
-                    <p>7 Days / 6 Nights</p>
-                </div>
-                <div class="location">
-                    <img src="icon/location.png" alt="">
-                    <p>Kashmir</p>
-                </div>
-                <div class="box">
-                    <div class="sub-box">
-                        <p>Rs.14599</p>
-                    </div>
-                    <div class="sub-box">
-                        <p style="color: #a4a4a4; font-weight: 500;">View More</p>
-                    </div>
-                </div>
-                <div class="call-request-1">
-                    <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="">
-                    <button>Request Callback</button>
-                </div>
-            </div>
-            <div class="pack-card">
-                <div class="pack-img" id="package-img4"></div>
-                <h3 class="pack-name">Kashmir Unplugged</h3>
-                <div class="time">
-                    <img src="icon/clock.png" alt="">
-                    <p>6 Days / 5 Nights</p>
-                </div>
-                <div class="location">
-                    <img src="icon/location.png" alt="">
-                    <p>Kashmir</p>
-                </div>
-                <div class="box">
-                    <div class="sub-box">
-                        <p>Rs.16799</p>
-                    </div>
-                    <div class="sub-box">
-                        <p style="color: #a4a4a4; font-weight: 500;">View More</p>
-                    </div>
-                </div>
-                <div class="call-request-1">
-                    <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="">
-                    <button>Request Callback</button>
-                </div>
-            </div>
-            <div class="pack-card">
-                <div class="pack-img" id="package-img5"></div>
-                <h3 class="pack-name">Colors Of Kashmir</h3>
-                <div class="time">
-                    <img src="icon/clock.png" alt="">
-                    <p>5 Days / 5 Nights</p>
-                </div>
-                <div class="location">
-                    <img src="icon/location.png" alt="">
-                    <p>Kashmir</p>
-                </div>
-                <div class="box">
-                    <div class="sub-box">
-                        <p>Rs.13599</p>
-                    </div>
-                    <div class="sub-box">
-                        <p style="color: #a4a4a4; font-weight: 500;">View More</p>
-                    </div>
-                </div>
-                <div class="call-request-1">
-                    <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="">
-                    <button>Request Callback</button>
-                </div>
-            </div>
-        </div>
-        <button class="package-btn" id="right-package"><img src="icon/black-right-arrow.png" alt=""></button>
-        <button class="package-btn" id="left-package"><img src="icon/black-left-arrow.png" alt=""></button>
-    </div>
-
-
-
-
-
-
-    <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Slick JS -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-</body>
-
-</html>
+    </html>

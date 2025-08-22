@@ -220,5 +220,62 @@ function resetAutoScrollPackages() {
 startAutoScrollPackages();
 
 
+const destinationContainer = document.getElementById("destination-slider");
+const leftDestinationBtn = document.getElementById("left-destionation");
+const rightDestinationBtn = document.getElementById("right-destionation");
+
+const destinationWidth = document.querySelector(".destination-card").offsetWidth + 20; // card + margin
+let autoScrollDestination;
+
+// --- Step 1: Clone cards for seamless infinite loop ---
+const destinationCards = document.querySelectorAll(".destination-card");
+destinationCards.forEach(card => {
+  const clone = card.cloneNode(true);
+  destinationContainer.appendChild(clone);
+});
+
+// --- Step 2: Scroll Right ---
+function scrollDestinationRight() {
+  destinationContainer.scrollBy({ left: destinationWidth, behavior: "smooth" });
+
+  if (destinationContainer.scrollLeft >= destinationContainer.scrollWidth / 2) {
+    destinationContainer.scrollTo({ left: 0, behavior: "instant" });
+  }
+}
+
+// --- Scroll Left ---
+function scrollDestinationLeft() {
+  destinationContainer.scrollBy({ left: -destinationWidth, behavior: "smooth" });
+
+  if (destinationContainer.scrollLeft <= 0) {
+    destinationContainer.scrollTo({ left: destinationContainer.scrollWidth / 2, behavior: "instant" });
+  }
+}
+
+// --- Step 3: Button Controls ---
+rightDestinationBtn.addEventListener("click", () => {
+  scrollDestinationRight();
+  resetAutoScrollDestination();
+});
+
+leftDestinationBtn.addEventListener("click", () => {
+  scrollDestinationLeft();
+  resetAutoScrollDestination();
+});
+
+// --- Step 4: Auto Scroll ---
+function startAutoScrollDestination() {
+  autoScrollDestination = setInterval(scrollDestinationRight, 3000); // every 3s
+}
+
+function resetAutoScrollDestination() {
+  clearInterval(autoScrollDestination);
+  startAutoScrollDestination();
+}
+
+startAutoScrollDestination();
+
+
+
 
 
