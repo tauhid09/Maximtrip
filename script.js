@@ -243,16 +243,19 @@ function scrollDestinationRight() {
   }
 }
 
-// --- Scroll Left ---
+// --- Step 3: Scroll Left ---
 function scrollDestinationLeft() {
   destinationContainer.scrollBy({ left: -destinationWidth, behavior: "smooth" });
 
   if (destinationContainer.scrollLeft <= 0) {
-    destinationContainer.scrollTo({ left: destinationContainer.scrollWidth / 2, behavior: "instant" });
+    destinationContainer.scrollTo({
+      left: destinationContainer.scrollWidth / 2,
+      behavior: "instant"
+    });
   }
 }
 
-// --- Step 3: Button Controls ---
+// --- Step 4: Button Controls ---
 rightDestinationBtn.addEventListener("click", () => {
   scrollDestinationRight();
   resetAutoScrollDestination();
@@ -263,7 +266,7 @@ leftDestinationBtn.addEventListener("click", () => {
   resetAutoScrollDestination();
 });
 
-// --- Step 4: Auto Scroll ---
+// --- Step 5: Auto Scroll ---
 function startAutoScrollDestination() {
   autoScrollDestination = setInterval(scrollDestinationRight, 3000); // every 3s
 }
@@ -274,6 +277,61 @@ function resetAutoScrollDestination() {
 }
 
 startAutoScrollDestination();
+
+const blogSlider = document.getElementById("blog-slider");
+const leftTravelBtn = document.getElementById("left-travel");
+const rightTravelBtn = document.getElementById("right-travel");
+
+const blogCardWidth = document.querySelector(".blog-card").offsetWidth + 20; // card + margin
+let autoScrollBlog;
+
+// --- Step 1: Clone cards for seamless infinite loop ---
+const blogCards = document.querySelectorAll(".blog-card");
+blogCards.forEach(card => {
+  const clone = card.cloneNode(true);
+  blogSlider.appendChild(clone);
+});
+
+// --- Step 2: Scroll Right ---
+function scrollBlogRight() {
+  blogSlider.scrollBy({ left: blogCardWidth, behavior: "smooth" });
+
+  if (blogSlider.scrollLeft >= blogSlider.scrollWidth / 2) {
+    blogSlider.scrollTo({ left: 0, behavior: "instant" });
+  }
+}
+
+// --- Scroll Left ---
+function scrollBlogLeft() {
+  blogSlider.scrollBy({ left: -blogCardWidth, behavior: "smooth" });
+
+  if (blogSlider.scrollLeft <= 0) {
+    blogSlider.scrollTo({ left: blogSlider.scrollWidth / 2, behavior: "instant" });
+  }
+}
+
+// --- Step 3: Button Controls ---
+rightTravelBtn.addEventListener("click", () => {
+  scrollBlogRight();
+  resetAutoScrollBlog();
+});
+
+leftTravelBtn.addEventListener("click", () => {
+  scrollBlogLeft();
+  resetAutoScrollBlog();
+});
+
+// --- Step 4: Auto Scroll ---
+function startAutoScrollBlog() {
+  autoScrollBlog = setInterval(scrollBlogRight, 3000); // every 3s
+}
+
+function resetAutoScrollBlog() {
+  clearInterval(autoScrollBlog);
+  startAutoScrollBlog();
+}
+
+startAutoScrollBlog();
 
 
 

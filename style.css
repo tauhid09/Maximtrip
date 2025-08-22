@@ -7,6 +7,10 @@
 body {
     overflow-y: visible;
     overflow-x: hidden;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #nav {
@@ -262,20 +266,30 @@ body {
 }
 
 #holiday-category {
-    margin: 0px 0px 50px 0px;
+    position: relative;
+    margin: 0px 0px 20px 0px;
     /* border: 1px solid black; */
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     background-color: #ffffff;
     padding-left: 140px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.category-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .category-slide #category-card{
+} */
+
 .red-text {
     color: #CE3C3D;
 }
 
-.underline {
+#holiday-category .underline {
     background-color: #CE3C3D;
     width: 90px;
     height: 4px;
@@ -288,13 +302,15 @@ body {
     /* border: 1px solid black; */
     overflow: hidden;
     white-space: nowrap;
-    width: 84%;
+    width: calc((21rem * 4) + (19px * 3));
     height: 350px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 10px;
     scroll-behavior: smooth;
+    position: relative;
+    left: 1%;
 }
 
 .card {
@@ -302,9 +318,9 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 12px;
-    flex: 0 0 17.5rem;
+    flex: 0 0 21rem;
     margin: 0 9px;
-    height: 100%;
+    height: 107%;
     box-shadow: 0px 200px 60px #00000020;
     transition: 0.2s ease-in;
     cursor: pointer;
@@ -387,14 +403,18 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    /* This will now work perfectly */
     background-color: #ffffff;
     cursor: pointer;
     box-shadow: 0px 20px 60px #0000006f;
     z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+
+    /* Add these lines for the background image */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    /* Controls the size of the icon */
 }
 
 .category-btn img {
@@ -402,28 +422,38 @@ body {
 }
 
 #right-button {
-    top: -40%;
-    left: 82%;
+    top: -35%;
+    left: 89%;
+    background-image: url('icon/black-right-arrow.png');
 }
 
 #left-button {
-    left: -1.5%;
+    left: 0%;
     top: -45%;
+    background-image: url('icon/black-left-arrow.png')
 }
 
 #holiday-packages {
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 20px 0px;
     /* border: 1px solid black; */
     width: 100vw;
-    height: 72vh;
+    height: 68vh;
     padding-left: 140px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#holiday-packages .underline {
+    background-color: #CE3C3D;
+    width: 90px;
+    height: 4px;
+    border-radius: 10px;
+    margin-top: 8px;
 }
 
 #packages-card {
     margin-top: 50px;
     /* border: 1px solid black; */
-    width: 90%;
+    width: 88%;
     height: 417px;
     overflow: hidden;
     display: flex;
@@ -579,27 +609,39 @@ body {
 }
 
 #right-package {
-    top: -54%;
+    top: -41%;
     left: 86.5%;
 }
 
 #left-package {
     left: 0px;
-    top: -64%;
+    top: -49%;
 }
 
 #populer-destination {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100vw;
-    height: 600px;
-    margin: 0 0 50px 0;
+    height: 448px;
     padding: 0 120px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.01rem;
 }
 
+#populer-destination h1 {
+    padding-left: 24px;
+}
+
+#populer-destination .underline {
+    background-color: #CE3C3D;
+    width: 90px;
+    height: 4px;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-left: 24px;
+}
+
 #destination-slider {
-    margin: 50px 0;
+    margin: 30px 0;
     /* border: 1px solid black; */
     width: 100%;
     height: 60%;
@@ -693,11 +735,143 @@ body {
     visibility: visible;
     transform: translateY(14rem) translateX(-55px)
 }
-#right-destionation{
-    left: 97%;
-    top: -42%;
+
+#right-destionation {
+    left: 97.5%;
+    top: -38%;
 }
-#left-destionation{
+
+#left-destionation {
     left: -1%;
-    top: -50.5%;
+    top: -46.5%;
+}
+
+/* --------------------------------------------------------------------------- */
+
+#travel-blog {
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: 448px;
+    padding: 0 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.01rem;
+}
+
+#travel-blog h1 {
+    padding-left: 24px;
+}
+
+#travel-blog .underline {
+    background-color: #CE3C3D;
+    width: 90px;
+    height: 4px;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-left: 24px;
+}
+
+#blog-slider {
+    margin: 30px 0;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease-in;
+}
+
+.blog-card {
+    position: relative;
+    border-radius: 20px;
+    flex: 0 0 21rem;
+    /* border: 1px solid black; */
+    height: 270px;
+    margin: 0 10px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+.travel-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.blog-card .travel-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 1;
+    object-fit: cover;
+    transition: 0.2s ease-in;
+}
+
+.blackgrd {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #00000000;
+    transition: 0.2s ease-in;
+}
+
+
+.blog-card h3 {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    bottom: 20%;
+    left: 10%;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+    background-color: transparent;
+}
+
+.travel-card p {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    transform: translateY(14.5rem) translateX(-55px);
+    transition: 0.2s ease-in;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.blog-card:hover .travel-card img,
+.blog-card:hover .travel-card .blackgrd,
+.blog-card:hover .travel-card h3 {
+    background-color: #00000037;
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+
+.blog-card:hover .travel-card h3 {
+    background-color: transparent;
+}
+
+.blog-card:hover .travel-card p {
+    transition: 0.2s ease-in;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(14rem) translateX(-55px)
+}
+
+#right-travel {
+    left: 97.5%;
+    top: -38%;
+}
+
+#left-travel {
+    left: -1%;
+    top: -46.5%;
 }
