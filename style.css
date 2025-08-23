@@ -907,6 +907,43 @@ body {
     transform: translateY(-50%);
 }
 
+aside{
+    position: fixed;
+    margin: 0 20px 20px 0;
+    /* border: 1px solid #CE3C3D; */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #CE3C3D;
+    z-index: 15;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: 0%;
+    transition: 0.2s ease-out;
+    animation: chat 1.5s infinite alternate;
+}
+aside:hover{
+    width: 65px;
+    height: 65px;
+    transition: 0.3s ease-in;
+    background-color: #a12e2e;
+}
+aside img{
+    width: 30px;
+}
+
+@keyframes chat {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+
 /* Fotter */
 
 #fotter {
