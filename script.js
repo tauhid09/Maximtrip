@@ -226,7 +226,7 @@ const destinationContainer = document.getElementById("destination-slider");
 const leftDestinationBtn = document.getElementById("left-destionation");
 const rightDestinationBtn = document.getElementById("right-destionation");
 
-const destinationWidth = document.querySelector(".destination-card").offsetWidth + 20; // card + gap
+const destinationWidth = document.querySelector(".destination-card").offsetWidth + 20; 
 let autoScrollDestination;
 
 const destinationCards = document.querySelectorAll(".destination-card");
