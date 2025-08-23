@@ -994,6 +994,8 @@ body {
         min-height: 12vh;
         padding: 10px;
         gap: 10px;
+        display: flex;
+        justify-content: space-evenly;
     }
     
     #nav img {
