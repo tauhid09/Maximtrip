@@ -10,8 +10,14 @@ body {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body main section #holiday-category,
+body main section #holiday-packages,
+body main section #populer-destination,
+body main section #travel-blog{
+    align-items: center;
 }
 
 /* Navigation Bar */
