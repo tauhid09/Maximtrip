@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="images/logo.png">
-        <script src="script.js" defer></script>
-        <title>Maximtrip</title>
-    </head>
-    <body>
 
-        <div id="nav">
-            <img src="images/image.png" alt="MaximTrip Logo">
-            <div id="search">
-                <img src="https://img.icons8.com/?size=100&id=59878&format=png&color=b3b3b3d5" alt="Search">
-                <input id="animatedInput" class="search" type="search" placeholder="Search destinations...">
-            </div>
-            <div id="contact">
-                <div id="number">
-                    <img src="icon/phone.png" alt="Phone">
-                    <p>+91 - 9797996205</p>
-                </div>
-                <div id="mail">
-                    <img src="icon/mail.png" alt="Email">
-                    <p>holiday@maximtrip.in</p>
-                </div>
-                <div id="circle">
-                    <img src="icon/plain.png" alt="Plane">
-                </div>
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script src="script.js" defer></script>
+    <title>Maximtrip</title>
+</head>
 
+<body>
+    <header>
+        <nav>
+            <div id="nav">
+                <img src="images/image.png" alt="MaximTrip Logo">
+                <div id="search">
+                    <img src="https://img.icons8.com/?size=100&id=59878&format=png&color=b3b3b3d5" alt="Search">
+                    <input id="animatedInput" class="search" type="search" placeholder="Search destinations...">
+                </div>
+                <div id="contact">
+                    <div id="number">
+                        <img src="icon/phone.png" alt="Phone">
+                        <p>+91 - 9797996205</p>
+                    </div>
+                    <div id="mail">
+                        <img src="icon/mail.png" alt="Email">
+                        <p>holiday@maximtrip.in</p>
+                    </div>
+                    <div id="circle">
+                        <img src="icon/plain.png" alt="Plane">
+                    </div>
+                </div>
+            </div>
+        </nav>
+            
         <div id="hero-section">
             <div class="slide-image active" id="slide-img1">
                 <div class="slide-card">
                     <h1>Kashmir A Frozen Dream Vacation</h1>
                     <h3>8 Days / 7 Nights</h3>
-                    <p>₹24199 <span style="text-decoration: line-through; color: #cccccc; font-weight: 400;">₹26198</span></p>
+                    <p>₹24199 <span
+                            style="text-decoration: line-through; color: #cccccc; font-weight: 400;">₹26198</span></p>
                 </div>
             </div>
             <div class="slide-image" id="slide-img2">
                 <div class="slide-card">
                     <h1>Kashmir Escapes At Smart Prices</h1>
                     <h3>7 Days / 6 Nights</h3>
-                    <p>₹14599 <span style="text-decoration: line-through; color: white; font-weight: 400">₹16599</span></p>
+                    <p>₹14599 <span style="text-decoration: line-through; color: white; font-weight: 400">₹16599</span>
+                    </p>
                 </div>
             </div>
             <div class="slide-image" id="slide-img3">
                 <div class="slide-card">
                     <h1>Kashmir Unplugged</h1>
                     <h3>6 Days / 5 Nights</h3>
-                    <p>₹16799 <span style="text-decoration: line-through; color: white; font-weight: 400">₹19799</span></p>
+                    <p>₹16799 <span style="text-decoration: line-through; color: white; font-weight: 400">₹19799</span>
+                    </p>
                 </div>
             </div>
             <div class="slide-image" id="slide-img4">
                 <div class="slide-card">
                     <h1>Colors Of Kashmir</h1>
                     <h3>5 Days / 4 Nights</h3>
-                    <p>₹13500 <span style="text-decoration: line-through; color: white; font-weight: 400">₹15000</span></p>
+                    <p>₹13500 <span style="text-decoration: line-through; color: white; font-weight: 400">₹15000</span>
+                    </p>
                 </div>
             </div>
             <button class="arrow-button" id="btn-1">
@@ -68,7 +76,10 @@
             </button>
             <button id="expert">CONNECT WITH AN EXPERT</button>
         </div>
+    </header>
 
+    <main>
+        <section>
         <div id="holiday-category" class="category-slider">
             <h1><span class="red-text">Holiday</span> Category</h1>
             <div class="underline"></div>
@@ -121,7 +132,9 @@
                 <img src="icon/black-left-arrow.png" alt="Previous">
             </button>
         </div>
+        </section>
 
+        <section>
         <div id="holiday-packages" class="package-slider">
             <h1><span class="red-text">Holiday</span> Packages</h1>
             <div class="underline"></div>
@@ -255,7 +268,9 @@
                 <img src="icon/black-left-arrow.png" alt="Previous">
             </button>
         </div>
+        </section>
 
+        <section>
         <div id="populer-destination" class="destination">
             <h1><span class="red-text">Popular </span>Destinations</h1>
             <div class="underline"></div>
@@ -308,7 +323,9 @@
                 <img src="icon/black-left-arrow.png" alt="Previous">
             </button>
         </div>
+        </section>
 
+        <section>
         <div id="travel-blog" class="travel-blog-class">
             <h1><span class="red-text">Travel </span>Blogs</h1>
             <div class="underline"></div>
@@ -349,7 +366,10 @@
                 <img src="icon/black-left-arrow.png" alt="Previous">
             </button>
         </div>
+        </section>
+    </main>
 
+    <footer>
         <div id="fotter">
             <div id="link">
                 <h3 style="color: #364153;">Follow Us On :</h3>
@@ -385,5 +405,7 @@
                 <p>Call with Us</p>
             </div>
         </div>
-    </body>
+    </footer>
+</body>
+
 </html>
