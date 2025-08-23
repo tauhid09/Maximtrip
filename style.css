@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -910,6 +910,7 @@ body {
 /* Fotter */
 
 #fotter {
+    /* position: absolute; */
     width: 100%;
     min-height: 100px;
     display: flex;
