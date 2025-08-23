@@ -169,4 +169,171 @@ startAutoScroll();
 
 //Holiday Package
 
+const packageContainer = document.getElementById("packages-card");
+const leftPackageBtn = document.getElementById("left-package");
+const rightPackageBtn = document.getElementById("right-package");
 
+const packageWidth = document.querySelector(".pack-card").offsetWidth + 20; // card + gap
+let autoScrollPackages;
+
+// --- Step 1: Clone package cards to make infinite scroll ---
+const packageCards = document.querySelectorAll(".pack-card");
+packageCards.forEach(card => {
+  const clone = card.cloneNode(true);
+  packageContainer.appendChild(clone);
+});
+
+// --- Step 2: Scroll Right function ---
+function scrollRightPackages() {
+  packageContainer.scrollBy({ left: packageWidth, behavior: "smooth" });
+
+  if (packageContainer.scrollLeft >= packageContainer.scrollWidth / 2) {
+    packageContainer.scrollTo({ left: 0, behavior: "instant" });
+  }
+}
+
+// Scroll Left function
+function scrollLeftPackages() {
+  packageContainer.scrollBy({ left: -packageWidth, behavior: "smooth" });
+
+  if (packageContainer.scrollLeft <= 0) {
+    packageContainer.scrollTo({ left: packageContainer.scrollWidth / 2, behavior: "instant" });
+  }
+}
+
+// --- Step 3: Button Controls ---
+rightPackageBtn.addEventListener("click", () => {
+  scrollRightPackages();
+  resetAutoScrollPackages();
+});
+
+leftPackageBtn.addEventListener("click", () => {
+  scrollLeftPackages();
+  resetAutoScrollPackages();
+});
+
+// --- Step 4: Auto Scroll ---
+function startAutoScrollPackages() {
+  autoScrollPackages = setInterval(scrollRightPackages, 3000); // every 3s
+}
+
+function resetAutoScrollPackages() {
+  clearInterval(autoScrollPackages);
+  startAutoScrollPackages();
+}
+
+startAutoScrollPackages();
+
+//Holiday Destination
+
+const destinationContainer = document.getElementById("destination-slider");
+const leftDestinationBtn = document.getElementById("left-destionation");
+const rightDestinationBtn = document.getElementById("right-destionation");
+
+const destinationWidth = document.querySelector(".destination-card").offsetWidth + 20; // card + gap
+let autoScrollDestination;
+
+// --- Step 1: Clone cards for infinite scroll ---
+const destinationCards = document.querySelectorAll(".destination-card");
+destinationCards.forEach(card => {
+  const clone = card.cloneNode(true);
+  destinationContainer.appendChild(clone);
+});
+
+// --- Step 2: Scroll Right ---
+function scrollRightDestination() {
+  destinationContainer.scrollBy({ left: destinationWidth, behavior: "smooth" });
+
+  if (destinationContainer.scrollLeft >= destinationContainer.scrollWidth / 2) {
+    destinationContainer.scrollTo({ left: 0, behavior: "instant" });
+  }
+}
+
+// --- Step 3: Scroll Left ---
+function scrollLeftDestination() {
+  destinationContainer.scrollBy({ left: -destinationWidth, behavior: "smooth" });
+
+  if (destinationContainer.scrollLeft <= 0) {
+    destinationContainer.scrollTo({ left: destinationContainer.scrollWidth / 2, behavior: "instant" });
+  }
+}
+
+// --- Step 4: Button Controls ---
+rightDestinationBtn.addEventListener("click", () => {
+  scrollRightDestination();
+  resetAutoScrollDestination();
+});
+
+leftDestinationBtn.addEventListener("click", () => {
+  scrollLeftDestination();
+  resetAutoScrollDestination();
+});
+
+// --- Step 5: Auto Scroll ---
+function startAutoScrollDestination() {
+  autoScrollDestination = setInterval(scrollRightDestination, 3000); // every 3s
+}
+
+function resetAutoScrollDestination() {
+  clearInterval(autoScrollDestination);
+  startAutoScrollDestination();
+}
+
+startAutoScrollDestination();
+
+//Travel Blogs
+
+const blogContainer = document.getElementById("blog-slider");
+    const leftBlogBtn = document.getElementById("left-travel");
+    const rightBlogBtn = document.getElementById("right-travel");
+
+    const blogWidth = document.querySelector(".blog-card").offsetWidth + 20; // card + gap
+    let autoScrollBlog;
+
+    // --- Step 1: Clone cards for infinite scroll ---
+    const blogCards = document.querySelectorAll(".blog-card");
+    blogCards.forEach(card => {
+        const clone = card.cloneNode(true);
+        blogContainer.appendChild(clone);
+    });
+
+    // --- Step 2: Scroll Right ---
+    function scrollRightBlog() {
+        blogContainer.scrollBy({ left: blogWidth, behavior: "smooth" });
+
+        if (blogContainer.scrollLeft >= blogContainer.scrollWidth / 2) {
+            blogContainer.scrollTo({ left: 0, behavior: "instant" });
+        }
+    }
+
+    // --- Step 3: Scroll Left ---
+    function scrollLeftBlog() {
+        blogContainer.scrollBy({ left: -blogWidth, behavior: "smooth" });
+
+        if (blogContainer.scrollLeft <= 0) {
+            blogContainer.scrollTo({ left: blogContainer.scrollWidth / 2, behavior: "instant" });
+        }
+    }
+
+    // --- Step 4: Button Controls ---
+    rightBlogBtn.addEventListener("click", () => {
+        scrollRightBlog();
+        resetAutoScrollBlog();
+    });
+
+    leftBlogBtn.addEventListener("click", () => {
+        scrollLeftBlog();
+        resetAutoScrollBlog();
+    });
+
+    // --- Step 5: Auto Scroll ---
+    function startAutoScrollBlog() {
+        autoScrollBlog = setInterval(scrollRightBlog, 3000); // every 3s
+    }
+
+    function resetAutoScrollBlog() {
+        clearInterval(autoScrollBlog);
+        startAutoScrollBlog();
+    }
+
+    startAutoScrollBlog();

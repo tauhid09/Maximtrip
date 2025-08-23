@@ -14,24 +14,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Mobile Menu Toggle */
-.mobile-menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-.mobile-menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background: #CE3C3D;
-    margin: 3px 0;
-    transition: 0.3s;
-}
 
 #nav {
     top: 0;
@@ -148,7 +130,7 @@ body {
     width: 20px;
     height: 20px;
     box-shadow: none;
-    transform: rotateZ(310deg);
+    transform: rotateZ(20deg);
 }
 
 #hero-section {
@@ -185,6 +167,7 @@ body {
     text-align: center;
     width: 90%;
     max-width: 800px;
+    /* border: 1px solid white; */
 }
 
 .slide-image .slide-card h1,
@@ -201,7 +184,7 @@ body {
 }
 
 .slide-image .slide-card h1 {
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 700;
 }
 
@@ -318,7 +301,7 @@ body {
 }
 
 #holiday-category h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 1.8rem);
     margin-bottom: 10px;
 }
 
@@ -482,7 +465,7 @@ body {
 }
 
 #holiday-packages h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 1.8rem);
     margin-bottom: 10px;
 }
 
@@ -686,7 +669,7 @@ body {
 }
 
 #populer-destination h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 1.8rem);
     margin-bottom: 10px;
 }
 
@@ -811,7 +794,7 @@ body {
 }
 
 #travel-blog h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-size: clamp(2rem, 4vw, 1.8rem);
     margin-bottom: 10px;
 }
 
