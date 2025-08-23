@@ -173,17 +173,16 @@ const packageContainer = document.getElementById("packages-card");
 const leftPackageBtn = document.getElementById("left-package");
 const rightPackageBtn = document.getElementById("right-package");
 
-const packageWidth = document.querySelector(".pack-card").offsetWidth + 20; // card + gap
+const packageWidth = document.querySelector(".pack-card").offsetWidth + 20
 let autoScrollPackages;
 
-// --- Step 1: Clone package cards to make infinite scroll ---
 const packageCards = document.querySelectorAll(".pack-card");
 packageCards.forEach(card => {
   const clone = card.cloneNode(true);
   packageContainer.appendChild(clone);
 });
 
-// --- Step 2: Scroll Right function ---
+
 function scrollRightPackages() {
   packageContainer.scrollBy({ left: packageWidth, behavior: "smooth" });
 
@@ -191,8 +190,6 @@ function scrollRightPackages() {
     packageContainer.scrollTo({ left: 0, behavior: "instant" });
   }
 }
-
-// Scroll Left function
 function scrollLeftPackages() {
   packageContainer.scrollBy({ left: -packageWidth, behavior: "smooth" });
 
@@ -201,7 +198,6 @@ function scrollLeftPackages() {
   }
 }
 
-// --- Step 3: Button Controls ---
 rightPackageBtn.addEventListener("click", () => {
   scrollRightPackages();
   resetAutoScrollPackages();
@@ -212,7 +208,7 @@ leftPackageBtn.addEventListener("click", () => {
   resetAutoScrollPackages();
 });
 
-// --- Step 4: Auto Scroll ---
+
 function startAutoScrollPackages() {
   autoScrollPackages = setInterval(scrollRightPackages, 3000); // every 3s
 }
@@ -233,14 +229,13 @@ const rightDestinationBtn = document.getElementById("right-destionation");
 const destinationWidth = document.querySelector(".destination-card").offsetWidth + 20; // card + gap
 let autoScrollDestination;
 
-// --- Step 1: Clone cards for infinite scroll ---
 const destinationCards = document.querySelectorAll(".destination-card");
 destinationCards.forEach(card => {
   const clone = card.cloneNode(true);
   destinationContainer.appendChild(clone);
 });
 
-// --- Step 2: Scroll Right ---
+
 function scrollRightDestination() {
   destinationContainer.scrollBy({ left: destinationWidth, behavior: "smooth" });
 
@@ -249,7 +244,7 @@ function scrollRightDestination() {
   }
 }
 
-// --- Step 3: Scroll Left ---
+
 function scrollLeftDestination() {
   destinationContainer.scrollBy({ left: -destinationWidth, behavior: "smooth" });
 
@@ -258,7 +253,7 @@ function scrollLeftDestination() {
   }
 }
 
-// --- Step 4: Button Controls ---
+
 rightDestinationBtn.addEventListener("click", () => {
   scrollRightDestination();
   resetAutoScrollDestination();
@@ -269,7 +264,7 @@ leftDestinationBtn.addEventListener("click", () => {
   resetAutoScrollDestination();
 });
 
-// --- Step 5: Auto Scroll ---
+
 function startAutoScrollDestination() {
   autoScrollDestination = setInterval(scrollRightDestination, 3000); // every 3s
 }
@@ -287,17 +282,17 @@ const blogContainer = document.getElementById("blog-slider");
     const leftBlogBtn = document.getElementById("left-travel");
     const rightBlogBtn = document.getElementById("right-travel");
 
-    const blogWidth = document.querySelector(".blog-card").offsetWidth + 20; // card + gap
+    const blogWidth = document.querySelector(".blog-card").offsetWidth + 20; 
     let autoScrollBlog;
 
-    // --- Step 1: Clone cards for infinite scroll ---
+    
     const blogCards = document.querySelectorAll(".blog-card");
     blogCards.forEach(card => {
         const clone = card.cloneNode(true);
         blogContainer.appendChild(clone);
     });
 
-    // --- Step 2: Scroll Right ---
+  
     function scrollRightBlog() {
         blogContainer.scrollBy({ left: blogWidth, behavior: "smooth" });
 
@@ -306,7 +301,7 @@ const blogContainer = document.getElementById("blog-slider");
         }
     }
 
-    // --- Step 3: Scroll Left ---
+  
     function scrollLeftBlog() {
         blogContainer.scrollBy({ left: -blogWidth, behavior: "smooth" });
 
@@ -315,7 +310,7 @@ const blogContainer = document.getElementById("blog-slider");
         }
     }
 
-    // --- Step 4: Button Controls ---
+    
     rightBlogBtn.addEventListener("click", () => {
         scrollRightBlog();
         resetAutoScrollBlog();
@@ -326,7 +321,7 @@ const blogContainer = document.getElementById("blog-slider");
         resetAutoScrollBlog();
     });
 
-    // --- Step 5: Auto Scroll ---
+  
     function startAutoScrollBlog() {
         autoScrollBlog = setInterval(scrollRightBlog, 3000); // every 3s
     }
