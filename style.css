@@ -523,6 +523,7 @@ body main section #travel-blog{
     transition: 0.3s ease;
     background: white;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .pack-card:hover {
