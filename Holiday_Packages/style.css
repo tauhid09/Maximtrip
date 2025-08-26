@@ -173,7 +173,7 @@
 
     .about-section {
         /* width: 60%; */
-        height:84vh;
+        height: 84vh;
         background-color: #ffffff;
         display: flex;
         justify-content: center;
@@ -421,10 +421,12 @@
             grid-template-columns: 65% 33%;
             padding: 0 3%;
         }
-        .about-section,.form-section {
-        /* width: 60%; */
-        height: 98vh;
-    }
+
+        .about-section,
+        .form-section {
+            /* width: 60%; */
+            height: 98vh;
+        }
 
         .title-section {
             /* overflow: scroll; */
@@ -615,8 +617,9 @@
         .form-title h2 {
             color: white;
             font-weight: 600;
-            font-size: 3.6vw;
+            font-size: 4.5vw;
         }
+
 
         #fotter {
             min-height: 90px;
@@ -657,6 +660,10 @@
             width: 155px;
         }
 
+        .image {
+            height: 60%;
+        }
+
         #nav #search input {
             width: 110px;
         }
@@ -670,6 +677,10 @@
             grid-template-columns: 300px;
         }
 
+        .about-section {
+            height: 80vh;
+        }
+
         .title-section {
             overflow: scroll;
             width: 95%;
@@ -678,7 +689,15 @@
         .form-title h2 {
             color: white;
             font-weight: 600;
-            font-size: 3.6vw;
+            font-size: 5.8vw;
+        }
+
+        .description {
+            height: 6vh;
+        }
+
+        .description h2 {
+            font-size: 25px;
         }
 
         #fotter {
