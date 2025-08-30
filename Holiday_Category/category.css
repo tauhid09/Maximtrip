@@ -338,8 +338,9 @@ section {
     height: 100%;
 }
 .detail-heading{
+    border: 1px solid black;
     display: flex;
-    justify-content: sp;
+    /* justify-content: ; */
 }
 
 .pack-2 {
