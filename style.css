@@ -313,7 +313,7 @@ body main section #travel-blog {
     visibility: visible;
     top: 13%;
     left: 32%;
-    position:absolute;
+    position:fixed;
     z-index: 10;
     width: 635px;
     height: 600px;
@@ -332,7 +332,7 @@ body main section #travel-blog {
 
 #popup_expert input,
 #popup_expert select,
-#popup_expert button {
+#popup_expert #submit-enquiry {
     width: 80%;
     height: 11%;
     margin: 10px 0;
@@ -350,13 +350,13 @@ body main section #travel-blog {
         outline: none;
         border: 2px solid blue;
     }
-#popup_expert button{
+#popup_expert #submit-enquiry{
     background-color: #CE3C3D;
     color: white;
     font-weight: 600;
     transition: 0.2s ease-out;
 }
-#popup_expert button:hover{
+#popup_expert #submit-enquiry:hover{
     background-color: #F54900;
     cursor: pointer;
     transition: 0.2s ease-in;
@@ -369,8 +369,8 @@ body main section #travel-blog {
     height: 35px;
     border-radius: 50%;
     z-index: 11;
-    top: 12%;
-    left: 68%;
+    top: -2%;
+    right: -2%;
     border: none;
     transition: 0.1s ease-in;
 }
@@ -384,7 +384,7 @@ body main section #travel-blog {
 }
 #black{
     visibility: hidden;
-    position: absolute;
+    position:fixed;
     top: 0;
     z-index: 9;
     width: 100%;

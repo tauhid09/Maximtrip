@@ -119,14 +119,14 @@ document.getElementById("expert").onclick = function () {
     document.getElementById("black").style.visibility = "visible";
   document.getElementById("close").style.display = "block";
   document.getElementById("close").style.visibility = "visible";
-  document.body.style.overflowY = "hidden"
+  // document.body.style.overflowY = "hidden"
 };
 
 document.getElementById("close").onclick = function () {
   document.getElementById("popup_expert").style.display = "none";
   document.getElementById("black").style.display = "none";
   document.getElementById("close").style.display = "none";
-  document.body.style.overflowY = "scroll"
+  // document.body.style.overflowY = "scroll"
 };
 
 
