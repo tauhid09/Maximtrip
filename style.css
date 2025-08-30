@@ -16,7 +16,7 @@ body {
 body main section #holiday-category,
 body main section #holiday-packages,
 body main section #populer-destination,
-body main section #travel-blog{
+body main section #travel-blog {
     align-items: center;
 }
 
@@ -30,10 +30,11 @@ body main section #travel-blog{
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
-    z-index: 10;
+    z-index: 8;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 /* Navigation Bar Logo */
 
 #nav img {
@@ -89,6 +90,7 @@ body main section #travel-blog{
         opacity: 0;
     }
 }
+
 /* Naviation Bar : Contact */
 
 #contact {
@@ -239,13 +241,13 @@ body main section #travel-blog{
     height: 45px;
     cursor: pointer;
     border-radius: 50%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     border: none;
     transition: 0.2s ease-in;
 }
 
 .arrow-button:hover {
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     transform: scale(1.1);
 }
 
@@ -290,7 +292,7 @@ body main section #travel-blog{
     transition: 0.2s ease-out;
 }
 
- /* Expert Button having HOvering effect */ 
+/* Expert Button having HOvering effect */
 
 #expert:hover {
     color: #CE3C3D;
@@ -298,8 +300,99 @@ body main section #travel-blog{
     transition: 0.2s ease-in;
     transform: translateX(-50%) scale(1.05);
 }
-#category-card,#packages-card,#destination-slider,#blog-slider{
+
+#category-card,
+#packages-card,
+#destination-slider,
+#blog-slider {
     justify-content: center;
+}
+
+/* PopUp Expert */
+#popup_expert {
+    visibility: visible;
+    top: 13%;
+    left: 32%;
+    position:absolute;
+    z-index: 10;
+    width: 635px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#popup_expert h2 {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#popup_expert input,
+#popup_expert select,
+#popup_expert button {
+    width: 80%;
+    height: 11%;
+    margin: 10px 0;
+    border: 1px solid #c0c0c186;
+    padding: 0 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    #popup_expert input[type="text"]:focus,
+    #popup_expert input[type="date"]:focus,
+    #popup_expert input[type="tel"]:focus,
+    #popup_expert input[type="email"]:focus,
+    #popup_expert select:focus {
+        outline: none;
+        border: 2px solid blue;
+    }
+#popup_expert button{
+    background-color: #CE3C3D;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s ease-out;
+}
+#popup_expert button:hover{
+    background-color: #F54900;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+#close{
+    visibility: hidden;
+    position: absolute;
+    background-color: #CE3C3D;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    z-index: 11;
+    top: 12%;
+    left: 68%;
+    border: none;
+    transition: 0.1s ease-in;
+}
+#close img{
+    width: 15px;
+}
+#close:hover{
+    background-color:#F54900 ;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+#black{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.463);
+}
+#popup_expert, #black, #close {
+    display: none;
 }
 
 /* Holiday Category */
@@ -359,7 +452,7 @@ body main section #travel-blog{
     border-radius: 12px;
     flex: 0 0 340px;
     height: 380px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
     cursor: pointer;
     background: white;
@@ -368,7 +461,7 @@ body main section #travel-blog{
 .card:hover {
     transition: 0.3s ease;
     transform: translateY(-10px);
-    box-shadow: 0px 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .img-card {
@@ -450,7 +543,7 @@ body main section #travel-blog{
     border-radius: 50%;
     background-color: #ffffff;
     cursor: pointer;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
     z-index: 2;
     position: absolute;
     display: flex;
@@ -529,7 +622,7 @@ body main section #travel-blog{
 .pack-card:hover {
     transition: 0.3s ease;
     transform: translateY(-5px);
-    box-shadow: 0px 15px 35px rgba(0,0,0,0.1);
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 #package-img1 {
@@ -657,7 +750,7 @@ body main section #travel-blog{
     border-radius: 50%;
     background-color: #ffffff;
     cursor: pointer;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
     position: absolute;
     z-index: 3;
     display: flex;
@@ -675,13 +768,15 @@ body main section #travel-blog{
 }
 
 #right-package {
-    top: 54%;;
+    top: 54%;
+    ;
     right: 7%;
     transform: translateY(-50%);
 }
 
 #left-package {
-    top: 54%;;
+    top: 54%;
+    ;
     left: 7%;
     transform: translateY(-50%);
 }
@@ -765,7 +860,7 @@ body main section #travel-blog{
     width: 100%;
     height: 100%;
     z-index: 2;
-    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.7) 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
     border-radius: 20px;
 }
 
@@ -812,6 +907,7 @@ body main section #travel-blog{
     left: 7%;
     transform: translateY(-50%);
 }
+
 /* Travel Blog : Card Slide */
 
 #travel-blog {
@@ -914,7 +1010,7 @@ body main section #travel-blog{
     transform: translateY(-50%);
 }
 
-aside{
+aside {
     position: fixed;
     margin: 0 20px 20px 0;
     /* border: 1px solid #CE3C3D; */
@@ -922,7 +1018,7 @@ aside{
     width: 60px;
     height: 60px;
     background-color: #CE3C3D;
-    z-index: 15;
+    z-index: 8;
     bottom: 0%;
     display: flex;
     justify-content: center;
@@ -932,21 +1028,24 @@ aside{
     transition: 0.2s ease-out;
     animation: chat 1.5s infinite alternate;
 }
-aside:hover{
+
+aside:hover {
     width: 65px;
     height: 65px;
     transition: 0.3s ease-in;
     background-color: #a12e2e;
 }
-aside img{
+
+aside img {
     width: 30px;
 }
 
 @keyframes chat {
-    0%{
+    0% {
         transform: translateY(0px);
     }
-    100%{
+
+    100% {
         transform: translateY(5px);
     }
 }
@@ -996,7 +1095,7 @@ aside img{
 
 .icon:hover {
     transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 #copyright {
@@ -1015,7 +1114,7 @@ aside img{
 
 /* FIxed Fotter on Mobile Screen */
 
-#message{
+#message {
     position: fixed;
     /* border: 1px solid red; */
     background-color: white;
@@ -1029,33 +1128,40 @@ aside img{
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
-.call-btn{
+
+.call-btn {
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 1px solid #CE3C3D;
     height: 30px;
 }
-.call-btn img{
-    width: 20px ;
+
+.call-btn img {
+    width: 20px;
 }
-.call-btn p{
+
+.call-btn p {
     font-size: 13.5px;
 }
 
-#callus,#callwithus{
+#callus,
+#callwithus {
     width: 100px;
     color: #CE3C3D;
 }
-#callexpert{
+
+#callexpert {
     width: 140px;
     background-color: #CE3C3D;
     color: white;
 }
-#callus{
-         border-bottom-left-radius: 10px;
+
+#callus {
+    border-bottom-left-radius: 10px;
 }
-#callwithus{
+
+#callwithus {
     border-bottom-right-radius: 10px;
 }
 
@@ -1069,52 +1175,49 @@ aside img{
         display: flex;
         justify-content: space-evenly;
     }
-    
+
     #nav img {
         width: 100px;
         height: 22px;
     }
-    
+
     #nav #search {
         width: 69%;
     }
-    
+
     #contact {
         visibility: hidden;
     }
 
-    
+
     .slide-image .slide-card h1 {
         font-size: clamp(1.5rem, 8vw, 2rem);
         padding: 8px;
     }
-    
+
     .slide-image .slide-card h3 {
         font-size: clamp(1rem, 5vw, 1.3rem);
         padding: 8px;
     }
-    
+
     .slide-image .slide-card p {
         font-size: clamp(0.9rem, 4vw, 1.1rem);
         padding: 8px;
     }
-    
+
     .arrow-button {
         width: 35px;
         height: 35px;
     }
-    
+
     .arrow-button img {
         width: 16px;
     }
-    
+
     #expert {
-        width: 200px;
-        height: 36px;
-        font-size: 11px;
-        bottom: 20px;
+        visibility: hidden;
     }
-    
+
     #holiday-category,
     #holiday-packages,
     #populer-destination,
@@ -1122,74 +1225,74 @@ aside img{
         padding: 0 15px;
         margin-bottom: 30px;
     }
-    
+
     #category-card {
         /* gap: 10px; */
         height: 350px;
     }
-    
+
     .card {
         flex: 0 0 340px;
         height: 330px;
     }
-    
+
     .img-card {
         height: 60%;
     }
-    
+
     .card-name {
         font-size: 15px;
         padding: 10px 12px 6px;
     }
-    
+
     .call-request {
         margin: 6px 12px;
     }
-    
+
     .call-request img {
         width: 30px;
     }
-    
+
     .call-request button {
         font-size: 11px;
         height: 32px;
     }
-    
+
     #packages-card {
         /* gap: 10px; */
         height: 350px;
         justify-content: space-between;
     }
-    
+
     .pack-card {
         flex: 0 0 340px;
         height: 380px;
     }
-    
+
     .pack-img {
         height: 160px;
     }
-    
+
     .pack-name {
         font-size: 13px;
         margin: 10px 10px 6px;
     }
-    
+
     .time,
     .location {
         margin: 5px 10px;
     }
-    
+
     .call-request-1 {
         margin: 6px 10px 10px;
         height: 35px;
     }
-    
+
     .call-request-1 button {
         font-size: 11px;
         height: 32px;
     }
-    
+
     #destination-slider,
     #blog-slider {
         height: 310px;
@@ -1197,13 +1300,13 @@ aside img{
         justify-content: space-between;
         border-radius: 10px;
     }
-    
+
     .destination-card,
     .blog-card {
         flex: 0 0 330px;
         height: 310px;
     }
-    
+
     .destination-card h3,
     .blog-card h3 {
         font-size: 14px;
@@ -1211,56 +1314,61 @@ aside img{
         left: 12px;
         right: 12px;
     }
-    
+
     .category-btn,
     .package-btn {
         width: 55px;
         height: 55px;
     }
-    
+
     .category-btn img,
     .package-btn img {
         width: 14px;
     }
 
-    #right-travel,#right-destionation,#right-package,#right-button{
+    #right-travel,
+    #right-destionation,
+    #right-package,
+    #right-button {
         right: 0px;
     }
 
-    #left-travel,#left-destionation,#left-package,#left-button{
+    #left-travel,
+    #left-destionation,
+    #left-package,
+    #left-button {
         left: 0px;
     }
-    
+
     #fotter {
         padding: 20px 15px;
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
     }
-    
 
-    
+
+
     #link h3 {
         font-size: 13px;
     }
-    
+
     .icon {
         width: 32px;
         height: 32px;
     }
-    
+
     .icon img {
         width: 16px;
         height: 16px;
     }
-    
+
     #copyright p {
         font-size: 12px;
         text-align: center;
     }
 
-    #message{
+    #message {
         visibility: visible;
     }
 }
-

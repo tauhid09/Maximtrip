@@ -110,6 +110,28 @@ document.querySelector("#btn-2").addEventListener("click", nextSlide);
 document.querySelector("#btn-1").addEventListener("click", prevSlide);
 
 
+
+// PopUp Of Experts
+
+document.getElementById("expert").onclick = function () {
+  document.getElementById("popup_expert").style.display = "flex";
+  document.getElementById("black").style.display = "block";
+    document.getElementById("black").style.visibility = "visible";
+  document.getElementById("close").style.display = "block";
+  document.getElementById("close").style.visibility = "visible";
+  document.body.style.overflowY = "hidden"
+};
+
+document.getElementById("close").onclick = function () {
+  document.getElementById("popup_expert").style.display = "none";
+  document.getElementById("black").style.display = "none";
+  document.getElementById("close").style.display = "none";
+  document.body.style.overflowY = "scroll"
+};
+
+
+
+
 //Holiday Category
 const cardContainer = document.getElementById("category-card");
 const leftBtn = document.getElementById("left-button");
@@ -165,6 +187,7 @@ function resetAutoScroll() {
   startAutoScroll();
 }
 startAutoScroll();
+
 
 
 //Holiday Package
@@ -226,7 +249,7 @@ const destinationContainer = document.getElementById("destination-slider");
 const leftDestinationBtn = document.getElementById("left-destionation");
 const rightDestinationBtn = document.getElementById("right-destionation");
 
-const destinationWidth = document.querySelector(".destination-card").offsetWidth + 20; 
+const destinationWidth = document.querySelector(".destination-card").offsetWidth + 20;
 let autoScrollDestination;
 
 const destinationCards = document.querySelectorAll(".destination-card");
@@ -279,56 +302,56 @@ startAutoScrollDestination();
 //Travel Blogs
 
 const blogContainer = document.getElementById("blog-slider");
-    const leftBlogBtn = document.getElementById("left-travel");
-    const rightBlogBtn = document.getElementById("right-travel");
+const leftBlogBtn = document.getElementById("left-travel");
+const rightBlogBtn = document.getElementById("right-travel");
 
-    const blogWidth = document.querySelector(".blog-card").offsetWidth + 20; 
-    let autoScrollBlog;
+const blogWidth = document.querySelector(".blog-card").offsetWidth + 20;
+let autoScrollBlog;
 
-    
-    const blogCards = document.querySelectorAll(".blog-card");
-    blogCards.forEach(card => {
-        const clone = card.cloneNode(true);
-        blogContainer.appendChild(clone);
-    });
 
-  
-    function scrollRightBlog() {
-        blogContainer.scrollBy({ left: blogWidth, behavior: "smooth" });
+const blogCards = document.querySelectorAll(".blog-card");
+blogCards.forEach(card => {
+  const clone = card.cloneNode(true);
+  blogContainer.appendChild(clone);
+});
 
-        if (blogContainer.scrollLeft >= blogContainer.scrollWidth / 2) {
-            blogContainer.scrollTo({ left: 0, behavior: "instant" });
-        }
-    }
 
-  
-    function scrollLeftBlog() {
-        blogContainer.scrollBy({ left: -blogWidth, behavior: "smooth" });
+function scrollRightBlog() {
+  blogContainer.scrollBy({ left: blogWidth, behavior: "smooth" });
 
-        if (blogContainer.scrollLeft <= 0) {
-            blogContainer.scrollTo({ left: blogContainer.scrollWidth / 2, behavior: "instant" });
-        }
-    }
+  if (blogContainer.scrollLeft >= blogContainer.scrollWidth / 2) {
+    blogContainer.scrollTo({ left: 0, behavior: "instant" });
+  }
+}
 
-    
-    rightBlogBtn.addEventListener("click", () => {
-        scrollRightBlog();
-        resetAutoScrollBlog();
-    });
 
-    leftBlogBtn.addEventListener("click", () => {
-        scrollLeftBlog();
-        resetAutoScrollBlog();
-    });
+function scrollLeftBlog() {
+  blogContainer.scrollBy({ left: -blogWidth, behavior: "smooth" });
 
-  
-    function startAutoScrollBlog() {
-        autoScrollBlog = setInterval(scrollRightBlog, 3000); // every 3s
-    }
+  if (blogContainer.scrollLeft <= 0) {
+    blogContainer.scrollTo({ left: blogContainer.scrollWidth / 2, behavior: "instant" });
+  }
+}
 
-    function resetAutoScrollBlog() {
-        clearInterval(autoScrollBlog);
-        startAutoScrollBlog();
-    }
 
-    startAutoScrollBlog();
+rightBlogBtn.addEventListener("click", () => {
+  scrollRightBlog();
+  resetAutoScrollBlog();
+});
+
+leftBlogBtn.addEventListener("click", () => {
+  scrollLeftBlog();
+  resetAutoScrollBlog();
+});
+
+
+function startAutoScrollBlog() {
+  autoScrollBlog = setInterval(scrollRightBlog, 3000); // every 3s
+}
+
+function resetAutoScrollBlog() {
+  clearInterval(autoScrollBlog);
+  startAutoScrollBlog();
+}
+
+startAutoScrollBlog();

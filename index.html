@@ -11,8 +11,9 @@
 </head>
 
 <body>
-     <header>   <!-- Header Section Start-->
-        <nav>    <!-- Navigation Section Start-->
+    <div id="black"></div>
+    <header> <!-- Header Section Start-->
+        <nav> <!-- Navigation Section Start-->
             <div id="nav">
                 <img src="images/image.png" alt="MaximTrip Logo">
                 <div id="search">
@@ -33,9 +34,9 @@
                     </div>
                 </div>
             </div>
-        </nav>     <!-- Navigation Section End-->
-            
-        <div id="hero-section">    <!-- Hero Section Start -->
+        </nav> <!-- Navigation Section End-->
+
+        <div id="hero-section"> <!-- Hero Section Start -->
             <div class="slide-image active" id="slide-img1">
                 <div class="slide-card">
                     <h1>Kashmir A Frozen Dream Vacation</h1>
@@ -75,305 +76,339 @@
                 <img src="icon/right-arrow.png" alt="Next" style="width: 20px;">
             </button>
             <button id="expert">CONNECT WITH AN EXPERT</button>
-        </div>  <!-- Hero Section Start -->
+        </div> <!-- Hero Section Start -->
+
+        <div id="popup_expert">
+            <h2>Quick Enquiry</h2>
+            <input type="text" placeholder="Destination" >
+            <input type="date">
+            <select name="Select Travellers" id="">
+                <option value="">Select Travellers</option>
+                <option value="">1 Travellers</option>
+                <option value="">2 Travellers</option>
+                <option value="">3 Travellers</option>
+                <option value="">4 Travellers</option>
+                <option value="">+5 Travellers</option>
+            </select>
+            <input type="text" placeholder="Full Name">
+            <input type="tel" placeholder="Enter Mobile no.">
+            <input type="email" placeholder="Email Address">
+            <button id="submit-enquiry" >Submit Enquiry</button>
+        </div>
+        <button id="close"><img src="icon/close.png" alt=""></button>
     </header> <!-- Header Section End-->
 
-     <main> <!--Main Section Start -->
+    <main> <!--Main Section Start -->
 
         <section> <!-- Holiday Category Section Start-->
-        <div id="holiday-category" class="category-slider">
-            <h1><span class="red-text">Holiday</span> Category</h1>
-            <div class="underline"></div>
-            <div id="category-card">
-                <div class="card">
-                    <div id="card1" class="img-card"></div>
-                    <h2 class="card-name">Kashmir Tour Packages</h2>
-                    <div class="call-request">
-                        <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="Call">
-                        <button>Request Callback</button>
+            <div id="holiday-category" class="category-slider">
+                <h1><span class="red-text">Holiday</span> Category</h1>
+                <div class="underline"></div>
+                <div id="category-card">
+                    <div class="card">
+                        <div id="card1" class="img-card"></div>
+                        <h2 class="card-name">Kashmir Tour Packages</h2>
+                        <div class="call-request">
+                            <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                                alt="Call">
+                            <button>Request Callback</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card2" class="img-card"></div>
+                        <h2 class="card-name">Kashmir Honeymoon Packages</h2>
+                        <div class="call-request">
+                            <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                                alt="Call">
+                            <button>Request Callback</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card3" class="img-card"></div>
+                        <h2 class="card-name">Kashmir Family Tour Packages</h2>
+                        <div class="call-request">
+                            <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                                alt="Call">
+                            <button>Request Callback</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card4" class="img-card"></div>
+                        <h2 class="card-name">Kashmir Group Tour Packages</h2>
+                        <div class="call-request">
+                            <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                                alt="Call">
+                            <button>Request Callback</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div id="card5" class="img-card"></div>
+                        <h2 class="card-name">Leh Ladakh Tour Packages</h2>
+                        <div class="call-request">
+                            <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                                alt="Call">
+                            <button>Request Callback</button>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div id="card2" class="img-card"></div>
-                    <h2 class="card-name">Kashmir Honeymoon Packages</h2>
-                    <div class="call-request">
-                        <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="Call">
-                        <button>Request Callback</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="card3" class="img-card"></div>
-                    <h2 class="card-name">Kashmir Family Tour Packages</h2>
-                    <div class="call-request">
-                        <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="Call">
-                        <button>Request Callback</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="card4" class="img-card"></div>
-                    <h2 class="card-name">Kashmir Group Tour Packages</h2>
-                    <div class="call-request">
-                        <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="Call">
-                        <button>Request Callback</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="card5" class="img-card"></div>
-                    <h2 class="card-name">Leh Ladakh Tour Packages</h2>
-                    <div class="call-request">
-                        <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="Call">
-                        <button>Request Callback</button>
-                    </div>
-                </div>
+                <button class="category-btn" id="right-button">
+                    <img src="icon/black-right-arrow.png" alt="Next">
+                </button>
+                <button class="category-btn" id="left-button">
+                    <img src="icon/black-left-arrow.png" alt="Previous">
+                </button>
             </div>
-            <button class="category-btn" id="right-button">
-                <img src="icon/black-right-arrow.png" alt="Next">
-            </button>
-            <button class="category-btn" id="left-button">
-                <img src="icon/black-left-arrow.png" alt="Previous">
-            </button>
-        </div>
         </section> <!-- Holiday Category Section End-->
 
         <section> <!-- Holiday Packages Section Start-->
-        <div id="holiday-packages" class="package-slider">
-            <h1><span class="red-text">Holiday</span> Packages</h1>
-            <div class="underline"></div>
-            <div id="packages-card">
-                <div class="pack-card" onclick="window.open('Holiday_Packages/package-1.html','_self')">
-                    <div class="pack-img" id="package-img1"></div>
-                    <h3 class="pack-name">Valley Of Wonders</h3>
-                    <div class="time">
-                        <img src="icon/clock.png" alt="Clock">
-                        <p>4 Days / 3 Nights</p>
-                    </div>
-                    <div class="location">
-                        <img src="icon/location.png" alt="Location">
-                        <p>Kashmir</p>
-                    </div>
-                    <div class="box">
-                        <div class="sub-box">
-                            <p>Rs.12599</p>
+            <div id="holiday-packages" class="package-slider">
+                <h1><span class="red-text">Holiday</span> Packages</h1>
+                <div class="underline"></div>
+                <div id="packages-card">
+                    <div class="pack-card" onclick="window.open('Holiday_Packages/package-1.html','_self')">
+                        <div class="pack-img" id="package-img1"></div>
+                        <h3 class="pack-name">Valley Of Wonders</h3>
+                        <div class="time">
+                            <img src="icon/clock.png" alt="Clock">
+                            <p>4 Days / 3 Nights</p>
                         </div>
-                        <div class="sub-box">
-                            <p style="color: #a4a4a4; font-weight: 500;">View More</p>
+                        <div class="location">
+                            <img src="icon/location.png" alt="Location">
+                            <p>Kashmir</p>
+                        </div>
+                        <div class="box">
+                            <div class="sub-box">
+                                <p>Rs.12599</p>
+                            </div>
+                            <div class="sub-box">
+                                <p style="color: #a4a4a4; font-weight: 500;">View More</p>
+                            </div>
+                        </div>
+                        <div class="call-request-1">
+                            <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                                alt="Call">
+                            <button>Request Callback</button>
                         </div>
                     </div>
-                    <div class="call-request-1">
-                        <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="Call">
-                        <button>Request Callback</button>
+                    <!-- Repeat similar structure for other package cards -->
+                    <div class="pack-card" onclick="window.open('Holiday_Packages/package-2.html','_self')">
+                        <div class="pack-img" id="package-img2"></div>
+                        <h3 class="pack-name">Kashmir A Frozen Dream Vacation</h3>
+                        <div class="time">
+                            <img src="icon/clock.png" alt="Clock">
+                            <p>8 Days / 7 Nights</p>
+                        </div>
+                        <div class="location">
+                            <img src="icon/location.png" alt="Location">
+                            <p>Kashmir</p>
+                        </div>
+                        <div class="box">
+                            <div class="sub-box">
+                                <p>Rs.24199</p>
+                            </div>
+                            <div class="sub-box">
+                                <p style="color: #a4a4a4; font-weight: 500;">View More</p>
+                            </div>
+                        </div>
+                        <div class="call-request-1">
+                            <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                                alt="Call">
+                            <button>Request Callback</button>
+                        </div>
+                    </div>
+                    <div class="pack-card" onclick="window.open('Holiday_Packages/package-3.html','_self')">
+                        <div class="pack-img" id="package-img3"></div>
+                        <h3 class="pack-name">Kashmir Escapes At Smart Prices</h3>
+                        <div class="time">
+                            <img src="icon/clock.png" alt="Clock">
+                            <p>7 Days / 6 Nights</p>
+                        </div>
+                        <div class="location">
+                            <img src="icon/location.png" alt="Location">
+                            <p>Kashmir</p>
+                        </div>
+                        <div class="box">
+                            <div class="sub-box">
+                                <p>Rs.14599</p>
+                            </div>
+                            <div class="sub-box">
+                                <p style="color: #a4a4a4; font-weight: 500;">View More</p>
+                            </div>
+                        </div>
+                        <div class="call-request-1">
+                            <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                                alt="Call">
+                            <button>Request Callback</button>
+                        </div>
+                    </div>
+                    <div class="pack-card" onclick="window.open('Holiday_Packages/package-4.html','_self')">
+                        <div class="pack-img" id="package-img4"></div>
+                        <h3 class="pack-name">Kashmir Unplugged</h3>
+                        <div class="time">
+                            <img src="icon/clock.png" alt="Clock">
+                            <p>6 Days / 5 Nights</p>
+                        </div>
+                        <div class="location">
+                            <img src="icon/location.png" alt="Location">
+                            <p>Kashmir</p>
+                        </div>
+                        <div class="box">
+                            <div class="sub-box">
+                                <p>Rs.16799</p>
+                            </div>
+                            <div class="sub-box">
+                                <p style="color: #a4a4a4; font-weight: 500;">View More</p>
+                            </div>
+                        </div>
+                        <div class="call-request-1">
+                            <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                                alt="Call">
+                            <button>Request Callback</button>
+                        </div>
+                    </div>
+                    <div class="pack-card" onclick="window.open('Holiday_Packages/package-5.html','_self')">
+                        <div class="pack-img" id="package-img5"></div>
+                        <h3 class="pack-name">Colors Of Kashmir</h3>
+                        <div class="time">
+                            <img src="icon/clock.png" alt="Clock">
+                            <p>5 Days / 5 Nights</p>
+                        </div>
+                        <div class="location">
+                            <img src="icon/location.png" alt="Location">
+                            <p>Kashmir</p>
+                        </div>
+                        <div class="box">
+                            <div class="sub-box">
+                                <p>Rs.13599</p>
+                            </div>
+                            <div class="sub-box">
+                                <p style="color: #a4a4a4; font-weight: 500;">View More</p>
+                            </div>
+                        </div>
+                        <div class="call-request-1">
+                            <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d"
+                                alt="Call">
+                            <button>Request Callback</button>
+                        </div>
                     </div>
                 </div>
-                <!-- Repeat similar structure for other package cards -->
-                <div class="pack-card" onclick="window.open('Holiday_Packages/package-2.html','_self')">
-                    <div class="pack-img" id="package-img2"></div>
-                    <h3 class="pack-name">Kashmir A Frozen Dream Vacation</h3>
-                    <div class="time">
-                        <img src="icon/clock.png" alt="Clock">
-                        <p>8 Days / 7 Nights</p>
-                    </div>
-                    <div class="location">
-                        <img src="icon/location.png" alt="Location">
-                        <p>Kashmir</p>
-                    </div>
-                    <div class="box">
-                        <div class="sub-box">
-                            <p>Rs.24199</p>
-                        </div>
-                        <div class="sub-box">
-                            <p style="color: #a4a4a4; font-weight: 500;">View More</p>
-                        </div>
-                    </div>
-                    <div class="call-request-1">
-                        <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="Call">
-                        <button>Request Callback</button>
-                    </div>
-                </div>
-                <div class="pack-card" onclick="window.open('Holiday_Packages/package-3.html','_self')">
-                    <div class="pack-img" id="package-img3"></div>
-                    <h3 class="pack-name">Kashmir Escapes At Smart Prices</h3>
-                    <div class="time">
-                        <img src="icon/clock.png" alt="Clock">
-                        <p>7 Days / 6 Nights</p>
-                    </div>
-                    <div class="location">
-                        <img src="icon/location.png" alt="Location">
-                        <p>Kashmir</p>
-                    </div>
-                    <div class="box">
-                        <div class="sub-box">
-                            <p>Rs.14599</p>
-                        </div>
-                        <div class="sub-box">
-                            <p style="color: #a4a4a4; font-weight: 500;">View More</p>
-                        </div>
-                    </div>
-                    <div class="call-request-1">
-                        <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="Call">
-                        <button>Request Callback</button>
-                    </div>
-                </div>
-                <div class="pack-card" onclick="window.open('Holiday_Packages/package-4.html','_self')">
-                    <div class="pack-img" id="package-img4"></div>
-                    <h3 class="pack-name">Kashmir Unplugged</h3>
-                    <div class="time">
-                        <img src="icon/clock.png" alt="Clock">
-                        <p>6 Days / 5 Nights</p>
-                    </div>
-                    <div class="location">
-                        <img src="icon/location.png" alt="Location">
-                        <p>Kashmir</p>
-                    </div>
-                    <div class="box">
-                        <div class="sub-box">
-                            <p>Rs.16799</p>
-                        </div>
-                        <div class="sub-box">
-                            <p style="color: #a4a4a4; font-weight: 500;">View More</p>
-                        </div>
-                    </div>
-                    <div class="call-request-1">
-                        <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="Call">
-                        <button>Request Callback</button>
-                    </div>
-                </div>
-                <div class="pack-card" onclick="window.open('Holiday_Packages/package-5.html','_self')">
-                    <div class="pack-img" id="package-img5"></div>
-                    <h3 class="pack-name">Colors Of Kashmir</h3>
-                    <div class="time">
-                        <img src="icon/clock.png" alt="Clock">
-                        <p>5 Days / 5 Nights</p>
-                    </div>
-                    <div class="location">
-                        <img src="icon/location.png" alt="Location">
-                        <p>Kashmir</p>
-                    </div>
-                    <div class="box">
-                        <div class="sub-box">
-                            <p>Rs.13599</p>
-                        </div>
-                        <div class="sub-box">
-                            <p style="color: #a4a4a4; font-weight: 500;">View More</p>
-                        </div>
-                    </div>
-                    <div class="call-request-1">
-                        <img src="https://img.icons8.com/?size=100&id=2olGSGqpqGWD&format=png&color=d13c3d" alt="Call">
-                        <button>Request Callback</button>
-                    </div>
-                </div>
+                <button class="package-btn" id="right-package">
+                    <img src="icon/black-right-arrow.png" alt="Next">
+                </button>
+                <button class="package-btn" id="left-package">
+                    <img src="icon/black-left-arrow.png" alt="Previous">
+                </button>
             </div>
-            <button class="package-btn" id="right-package">
-                <img src="icon/black-right-arrow.png" alt="Next">
-            </button>
-            <button class="package-btn" id="left-package">
-                <img src="icon/black-left-arrow.png" alt="Previous">
-            </button>
-        </div>
         </section><!-- Holiday Packages Section End-->
 
         <section> <!-- Popular Destination Section Start-->
-        <div id="populer-destination" class="destination">
-            <h1><span class="red-text">Popular </span>Destinations</h1>
-            <div class="underline"></div>
-            <div id="destination-slider">
-                <div class="destination-card" id="des-card-1" onclick="window.open('Popular_Destinations/destination-1.html','_self')">
-                    <div class="card-content">
-                        <img src="images/populardestination/1img.jpg" alt="Srinagar">
-                        <div class="blackgrd"></div>
-                        <h3>Places to Visit In Srinagar</h3>
-                        <p>Places to Visit In Srinagar</p>
+            <div id="populer-destination" class="destination">
+                <h1><span class="red-text">Popular </span>Destinations</h1>
+                <div class="underline"></div>
+                <div id="destination-slider">
+                    <div class="destination-card" id="des-card-1"
+                        onclick="window.open('Popular_Destinations/destination-1.html','_self')">
+                        <div class="card-content">
+                            <img src="images/populardestination/1img.jpg" alt="Srinagar">
+                            <div class="blackgrd"></div>
+                            <h3>Places to Visit In Srinagar</h3>
+                            <p>Places to Visit In Srinagar</p>
+                        </div>
+                    </div>
+                    <div class="destination-card" id="des-card-2"
+                        onclick="window.open('Popular_Destinations/destination-2.html','_self')">
+                        <div class="card-content">
+                            <img src="images/populardestination/2img.jpg" alt="Pahalgam">
+                            <div class="blackgrd"></div>
+                            <h3>Places to Visit In Pahalgam</h3>
+                            <p>Places to Visit In Pahalgam</p>
+                        </div>
+                    </div>
+                    <div class="destination-card" id="des-card-3"
+                        onclick="window.open('Popular_Destinations/destination-3.html','_self')">
+                        <div class="card-content">
+                            <img src="images/populardestination/3img.jpg" alt="Sonmarg">
+                            <div class="blackgrd"></div>
+                            <h3>Places to Visit in Sonmarg</h3>
+                            <p>Places to Visit in Sonmarg</p>
+                        </div>
+                    </div>
+                    <div class="destination-card" id="des-card-4"
+                        onclick="window.open('Popular_Destinations/destination-4.html','_self')">
+                        <div class="card-content">
+                            <img src="images/populardestination/4img.jpg" alt="Gulmarg">
+                            <div class="blackgrd"></div>
+                            <h3>Places to Visit in Gulmarg</h3>
+                            <p>Places to Visit in Gulmarg</p>
+                        </div>
+                    </div>
+                    <div class="destination-card" id="des-card-5"
+                        onclick="window.open('Popular_Destinations/destination-5.html','_self')">
+                        <div class="card-content">
+                            <img src="images/populardestination/5img.jpg" alt="Doodhpathri">
+                            <div class="blackgrd"></div>
+                            <h3>Places To Visit In Doodhpathri</h3>
+                            <p>Places To Visit In Doodhpathri</p>
+                        </div>
                     </div>
                 </div>
-                <div class="destination-card" id="des-card-2"  onclick="window.open('Popular_Destinations/destination-2.html','_self')">
-                    <div class="card-content">
-                        <img src="images/populardestination/2img.jpg" alt="Pahalgam">
-                        <div class="blackgrd"></div>
-                        <h3>Places to Visit In Pahalgam</h3>
-                        <p>Places to Visit In Pahalgam</p>
-                    </div>
-                </div>
-                <div class="destination-card" id="des-card-3"  onclick="window.open('Popular_Destinations/destination-3.html','_self')">
-                    <div class="card-content">
-                        <img src="images/populardestination/3img.jpg" alt="Sonmarg">
-                        <div class="blackgrd"></div>
-                        <h3>Places to Visit in Sonmarg</h3>
-                        <p>Places to Visit in Sonmarg</p>
-                    </div>
-                </div>
-                <div class="destination-card" id="des-card-4"  onclick="window.open('Popular_Destinations/destination-4.html','_self')">
-                    <div class="card-content">
-                        <img src="images/populardestination/4img.jpg" alt="Gulmarg">
-                        <div class="blackgrd"></div>
-                        <h3>Places to Visit in Gulmarg</h3>
-                        <p>Places to Visit in Gulmarg</p>
-                    </div>
-                </div>
-                <div class="destination-card" id="des-card-5"  onclick="window.open('Popular_Destinations/destination-5.html','_self')">
-                    <div class="card-content">
-                        <img src="images/populardestination/5img.jpg" alt="Doodhpathri">
-                        <div class="blackgrd"></div>
-                        <h3>Places To Visit In Doodhpathri</h3>
-                        <p>Places To Visit In Doodhpathri</p>
-                    </div>
-                </div>
+                <button class="package-btn" id="right-destionation">
+                    <img src="icon/black-right-arrow.png" alt="Next">
+                </button>
+                <button class="package-btn" id="left-destionation">
+                    <img src="icon/black-left-arrow.png" alt="Previous">
+                </button>
             </div>
-            <button class="package-btn" id="right-destionation">
-                <img src="icon/black-right-arrow.png" alt="Next">
-            </button>
-            <button class="package-btn" id="left-destionation">
-                <img src="icon/black-left-arrow.png" alt="Previous">
-            </button>
-        </div>
         </section> <!-- Popular Destination Section End-->
 
         <section> <!-- Travel Blogs Section Start-->
-        <div id="travel-blog" class="travel-blog-class">
-            <h1><span class="red-text">Travel </span>Blogs</h1>
-            <div class="underline"></div>
-            <div id="blog-slider">
-                <div class="blog-card" id="des-card-1">
-                    <div class="travel-card">
-                        <img src="images/Travelblog/1img.png" alt="Kashmir Tour">
-                        <div class="blackgrd"></div>
-                        <h3>Kashmir Tour Packages</h3>
+            <div id="travel-blog" class="travel-blog-class">
+                <h1><span class="red-text">Travel </span>Blogs</h1>
+                <div class="underline"></div>
+                <div id="blog-slider">
+                    <div class="blog-card" id="des-card-1">
+                        <div class="travel-card">
+                            <img src="images/Travelblog/1img.png" alt="Kashmir Tour">
+                            <div class="blackgrd"></div>
+                            <h3>Kashmir Tour Packages</h3>
+                        </div>
+                    </div>
+                    <div class="blog-card" id="des-card-2">
+                        <div class="travel-card">
+                            <img src="images/Travelblog/2img.png" alt="Honeymoon">
+                            <div class="blackgrd"></div>
+                            <h3>Kashmir Honeymoon Packages</h3>
+                        </div>
+                    </div>
+                    <div class="blog-card" id="des-card-3">
+                        <div class="travel-card">
+                            <img src="images/Travelblog/3img.png" alt="Budget Tour">
+                            <div class="blackgrd"></div>
+                            <h3>Budget Kashmir Tour Packages</h3>
+                        </div>
+                    </div>
+                    <div class="blog-card" id="des-card-4">
+                        <div class="travel-card">
+                            <img src="images/Travelblog/4img.png" alt="Budget Tour">
+                            <div class="blackgrd"></div>
+                            <h3>Budget Kashmir Tour Packages</h3>
+                        </div>
                     </div>
                 </div>
-                <div class="blog-card" id="des-card-2">
-                    <div class="travel-card">
-                        <img src="images/Travelblog/2img.png" alt="Honeymoon">
-                        <div class="blackgrd"></div>
-                        <h3>Kashmir Honeymoon Packages</h3>
-                    </div>
-                </div>
-                <div class="blog-card" id="des-card-3">
-                    <div class="travel-card">
-                        <img src="images/Travelblog/3img.png" alt="Budget Tour">
-                        <div class="blackgrd"></div>
-                        <h3>Budget Kashmir Tour Packages</h3>
-                    </div>
-                </div>
-                <div class="blog-card" id="des-card-4">
-                    <div class="travel-card">
-                        <img src="images/Travelblog/4img.png" alt="Budget Tour">
-                        <div class="blackgrd"></div>
-                        <h3>Budget Kashmir Tour Packages</h3>
-                    </div>
-                </div>
+                <button class="package-btn" id="right-travel">
+                    <img src="icon/black-right-arrow.png" alt="Next">
+                </button>
+                <button class="package-btn" id="left-travel">
+                    <img src="icon/black-left-arrow.png" alt="Previous">
+                </button>
             </div>
-            <button class="package-btn" id="right-travel">
-                <img src="icon/black-right-arrow.png" alt="Next">
-            </button>
-            <button class="package-btn" id="left-travel">
-                <img src="icon/black-left-arrow.png" alt="Previous">
-            </button>
-        </div>
         </section> <!-- Travel Blogs Section End-->
 
     </main> <!--Main Section End -->
 
-<aside> <!-- Contact Button Start-->
-    <img src="icon/chat.png" alt="">
-</aside> <!-- Contact Button Start-->
+    <aside> <!-- Contact Button Start-->
+        <img src="icon/chat.png" alt="">
+    </aside> <!-- Contact Button Start-->
 
     <footer> <!-- Footer Section Start-->
         <div id="fotter">
