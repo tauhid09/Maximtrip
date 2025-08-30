@@ -9,12 +9,15 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 /* Navigation Bar */
 
 #nav {
+    /* visibility: hidden; */
     position: absolute;
+
     top: 0;
     width: 100%;
     height: 12vh;
@@ -142,6 +145,227 @@ body {
 
 
 
+main {
+    background-color: #F9FAFB;
+    padding: 20px 120px;
+    margin-top: 100px;
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 400px repeat(2, 1fr);
+    grid-template-rows: 70px 250px repeat(6, 300px);
+    grid-template-areas: " tab tab tab "
+        " des des des "
+        " filter pack-1 pack-1 "
+        " filter pack-2 pack-2 "
+        " filter pack-3 pack-3 "
+        " no_result pack-4 pack-4 "
+        " no_result pack-5 pack-5 "
+        /* " filter no_result no_result" */
+        " no_result faqs faqs ";
+    gap: 20px;
+}
+
+section {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 10px 30px rgba(0, 0, 0, 0.103);
+
+}
+
+.tab {
+    height: 50px;
+    grid-area: tab;
+    border: 1px solid #F3F4F6;
+    background-color: #F3F4F6;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.tab p a {
+    color: #D95F3D;
+    text-decoration: none;
+}
+
+.tab span {
+    padding: 0 15px;
+}
+
+.des {
+    grid-area: des;
+    padding: 20px;
+}
+
+.heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    width: 475px;
+}
+
+.heading h1 {
+    font-size: 35px;
+}
+
+.para {
+    margin-top: 5px;
+    padding-left: 5px;
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.para p {
+    overflow: hidden;
+    /* border: 1px solid black; */
+    width: 69%;
+    height: 120px;
+    font-size: 18px;
+    color: #586477;
+}
+
+.para img {
+    object-fit: cover;
+    object-position: top;
+    width: 30%;
+    height: 150px;
+}
+
+.des a {
+    color: #D95F3D;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.filter {
+    position: sticky;
+    top: 30px;
+    height: 850px;
+    position: relative sticky;
+    grid-area: filter;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.filter h2 {
+    font-weight: 500;
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+}
+
+.range {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.filter input {
+    width: 100%;
+}
+
+#Duration {
+    margin: 25px 0 20px 0;
+}
+
+.checkpoint {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.checkpoint label {
+    gap: 10px;
+    display: flex;
+    font-size: 16px;
+}
+
+.checkpoint label input {
+    width: 15px;
+}
+
+.pack {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+
+}
+
+.pack-1 {
+    grid-area: pack-1;
+}
+
+.image {
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    background-position: center;
+    background-size: cover;
+}
+#image-1{
+    background-image: url(images/holidaypackage/1img.png);
+}
+#image-2{
+    background-image: url(images/holidaypackage/2img.jpg);
+}
+#image-3{
+    background-image: url(images/holidaypackage/3img.jpg);
+}
+#image-4{
+    background-image: url(images/holidaypackage/4img.jpg);
+}
+#image-5{
+    background-image: url(images/holidaypackage/5img.jpg);
+}
+.img-detail {
+    border: 1px solid black;
+    display: flex;
+}
+.pack .img-detail .detail{
+    border: 1px solid black;
+    width: 550px;
+    height: 100%;
+}
+.pack .img-detail .price{
+    border: 1px solid black;
+    width: 145px;
+    height: 100%;
+}
+.detail-heading{
+    display: flex;
+    justify-content: sp;
+}
+
+.pack-2 {
+    grid-area: pack-2;
+}
+
+.pack-3 {
+    grid-area: pack-3;
+}
+
+.pack-4 {
+    grid-area: pack-4;
+}
+
+.pack-5 {
+    grid-area: pack-5;
+}
+
+.no_result {
+    grid-area: no_result;
+    visibility: hidden;
+}
+
+.faqs {
+    grid-area: faqs;
+}
 
 /* Footer */
 #fotter {
