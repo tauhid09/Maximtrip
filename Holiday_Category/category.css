@@ -335,13 +335,9 @@
         display: flex;
     }
 
-    .pack .img-detail .detail {
-        /* border: 1px solid black; */
-        width: 500px;
-        height: 100%;
-    }
 
     .detail {
+        width: 400px;
         margin-left: 20px;
     }
 
@@ -388,13 +384,13 @@
     }
 
     .img-detail {
-        width: 145px;
+        /* width: 345px; */
         height: 100%;
     }
 
     .price {
         /* border: 1px solid black; */
-        width: 145px;
+        width: 245px;
         height: 100%;
     }
 
