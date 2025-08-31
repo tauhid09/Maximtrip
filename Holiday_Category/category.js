@@ -75,3 +75,24 @@ function typeEffect() {
 }
 
 typeEffect();
+const toggleBtn = document.getElementById("toggleBtn");
+const descText = document.getElementById("descText");
+const main = document.querySelector("main");
+
+let expanded = false;
+
+toggleBtn.addEventListener("click", function () {
+  if (!expanded) {
+    main.style.gridTemplateRows = "70px 3050px repeat(5, 300px) 700px";
+     descText.style.height = "2900px";  
+    toggleBtn.textContent = "Read Less <";
+    expanded = true;
+  } else {
+    main.style.gridTemplateRows = "70px 250px repeat(5, 300px) 700px";
+     descText.style.height = "120px";
+    toggleBtn.textContent = "Read More >";
+
+    expanded = false;
+  }
+});
+
