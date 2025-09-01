@@ -560,7 +560,7 @@
         main {
             padding: 20px 80px;
             grid-template-columns: 350px repeat(2, 1fr);
-            grid-template-rows: 70px 250px repeat(5, 300px) 600px;
+            grid-template-rows: 70px 250px repeat(5, 300px) 650px;
         }
 
         .pack {
@@ -568,7 +568,7 @@
         }
 
         .faqs {
-            height: 600px;
+            height: 650px;
             padding: 30px;
         }
 
